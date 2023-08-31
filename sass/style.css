@@ -1,15 +1,18 @@
 html {
   display: block;
 }
+
 body,
 html {
   margin: 0;
   font-family: Roboto, sans-serif;
   scroll-behavior: smooth;
 }
+
 body {
   display: block;
 }
+
 .header {
   padding: 1rem;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
@@ -28,6 +31,7 @@ body {
   margin: auto;
   position: relative;
 }
+
 div {
   display: block;
 }
@@ -35,6 +39,7 @@ div {
 main {
   display: block;
 }
+
 .local {
   display: flex;
   justify-content: center;
@@ -43,21 +48,26 @@ main {
   font-size: 1.2rem;
   position: relative;
 }
+
 section {
   display: block;
 }
+
 .local-icon {
   margin-right: 1rem;
 }
+
 .fa,
 .fas {
   font-weight: 900;
 }
+
 .fa,
 .far,
 .fas {
   font-family: 'Font Awesome 5 Free';
 }
+
 .fa,
 .fab,
 .fad,
@@ -66,12 +76,12 @@ section {
 .fas {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
   line-height: 1;
 }
+
 i {
   font-style: italic;
 }
@@ -79,12 +89,15 @@ i {
 .local-icon {
   margin-right: 1rem;
 }
+
 .local-text {
   font-weight: 700;
 }
+
 .hero-title {
   margin: 0;
 }
+
 h2 {
   display: block;
   font-size: 1.5em;
@@ -94,15 +107,18 @@ h2 {
   margin-inline-end: 0px;
   font-weight: bold;
 }
+
 .hero {
   padding: 2rem;
   text-align: center;
   background-color: #fafafa;
 }
+
 .hero-subtitle {
   font-weight: 300;
   margin: 1.5rem 0;
 }
+
 p {
   display: block;
   margin-block-start: 1em;
@@ -110,6 +126,7 @@ p {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
+
 .hero-btn {
   border: 0;
   padding: 0.75rem 1.5rem;
@@ -118,27 +135,27 @@ p {
   border-radius: 100px;
   color: #fff;
   background-color: #686868;
-  background-image: linear-gradient(
-    0deg,
-    rgba(147, 86, 220, 0.9),
-    rgba(255, 121, 218, 0.9)
-  );
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   cursor: pointer;
   transition-duration: 0.25s;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
 }
+
 .tuto {
   padding: 2rem 1rem;
 }
+
 .tuto-title {
   margin-top: 0;
 }
+
 .tuto-steps {
   margin: 0;
   padding: 0;
   list-style: none;
   counter-reset: compteListe;
 }
+
 ol {
   display: block;
   list-style-type: decimal;
@@ -148,9 +165,11 @@ ol {
   margin-inline-end: 0px;
   padding-inline-start: 40px;
 }
+
 .tuto-step:first-child {
   margin-top: 0;
 }
+
 .tuto-step {
   padding: 1.5rem;
   margin: 1rem 0 1rem 0.75rem;
@@ -160,13 +179,15 @@ ol {
   display: flex;
   position: relative;
 }
+
 li {
   display: list-item;
   text-align: -webkit-match-parent;
 }
+
 .tuto-step:before {
   counter-increment: compteListe 1;
-  content: counter(compteListe) ' ';
+  content: counter(compteListe) " ";
   background: #9356dc;
   height: 1.5rem;
   width: 1.5rem;
@@ -178,6 +199,7 @@ li {
   position: absolute;
   left: -0.75rem;
 }
+
 .tuto-icon {
   margin-right: 4rem;
   margin-left: 2rem;
@@ -187,19 +209,23 @@ li {
 .tuto-step:last-child {
   margin-bottom: 0;
 }
+
 .fa-store {
   content: '\f54e';
 }
+
 .restaurants {
   background-color: #f6f6f6;
   padding: 2rem 1rem;
 }
+
 .cards {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   column-gap: 2rem;
   row-gap: 2rem;
 }
+
 .card {
   background-color: #fff;
   border-radius: 1rem;
@@ -217,10 +243,12 @@ li {
   box-shadow: none;
   object-fit: cover;
 }
+
 img {
   overflow-clip-margin: content-box;
   overflow: clip;
 }
+
 .card-sticker {
   background-color: #99e2d0;
   color: #1b6150;
@@ -230,18 +258,22 @@ img {
   top: 1rem;
   right: 0.75rem;
 }
+
 .card-footer {
   padding: 1rem;
   position: relative;
   display: flex;
   align-items: center;
 }
+
 .card-content {
   flex: 1;
 }
+
 .card-title {
   margin: 0 0 0.25rem;
 }
+
 h3 {
   display: block;
   font-size: 1.17em;
@@ -251,9 +283,11 @@ h3 {
   margin-inline-end: 0px;
   font-weight: bold;
 }
+
 .card-subtitle {
   margin: 0;
 }
+
 .menu-btn {
   height: 2rem;
   width: 2rem;
@@ -267,7 +301,8 @@ h3 {
   position: relative;
   background-color: #000;
 }
-.card__like {
+
+.fa-heart {
   height: 2rem;
   width: 2rem;
   background-color: initial;
@@ -277,7 +312,8 @@ h3 {
   align-items: center;
   justify-content: center;
 }
-.card__like:hover {
+
+.fa-heart:hover {
   opacity: 0;
   transition: 0.5s;
   content: '';
@@ -291,12 +327,12 @@ h3 {
   left: 0;
   height: 100%;
   width: 100%;
-
   opacity: 0;
   transition: 0.5s;
   content: '';
   background: linear-gradient(0deg, #9356dc, #ff79da);
 }
+
 .menu-like {
   transition-duration: 0.25s;
   background-color: #f6f6f6;
@@ -305,13 +341,16 @@ h3 {
   justify-content: center;
   mix-blend-mode: lighten;
 }
+
 .car-like {
   background-color: #0a0a0a;
 }
+
 .fab,
 .far {
   font-weight: 400;
 }
+
 .fa-2x {
   font-size: 2em;
 }
@@ -319,14 +358,17 @@ h3 {
 .footer {
   background-color: #353535;
 }
+
 .footer {
   display: block;
 }
+
 .footer .container {
   display: flex;
   flex-direction: column;
   padding: 1rem;
 }
+
 .footer-logo {
   color: #fff;
   font-family: Shrikhand, 'cursive';
@@ -335,17 +377,21 @@ h3 {
   font-style: italic;
   margin: 0 0 1rem;
 }
+
 .footer-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 .footer-listElt:first-child {
   margin-top: 0;
 }
+
 .footer-listElt {
   margin: 0.5rem 0;
 }
+
 .footer-icon {
   width: 1.2rem;
   margin-right: 0.5rem;
@@ -362,6 +408,7 @@ h3 {
   flex-direction: column;
   padding: 1rem;
 }
+
 footer {
   display: block;
 }

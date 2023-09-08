@@ -1,7 +1,6 @@
 .header--menupage {
   position: relative;
 }
-
 .header--previous {
   position: absolute;
   left: 1rem;
@@ -24,7 +23,6 @@
   margin-bottom: 20px;
   margin-top: 20px;
 }
-
 .header-logo img {
   max-width: 100%;
   height: auto;
@@ -42,18 +40,15 @@
   z-index: 1;
   position: relative;
 }
-
 .container__page {
   padding: 1rem 2rem 0 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .container__title {
-  font-family: 'Shrikhand', 'cursive';
+  font-family: "Shrikhand", "cursive";
 }
-
 .container__btn {
   height: 2rem;
   width: 2rem;
@@ -67,15 +62,13 @@
   position: relative;
   background-color: black;
 }
-
 .container__btn:hover::before {
   opacity: 1;
 }
-
 .container__btn::before {
   opacity: 0;
   transition: 0.5s;
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -83,7 +76,6 @@
   width: 100%;
   background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
 }
-
 .container__like {
   transition-duration: 0.25s;
   background-color: #f6f6f6;
@@ -97,7 +89,6 @@
   justify-content: center;
   mix-blend-mode: lighten;
 }
-
 .container__btn:hover .menu__like--noBg {
   opacity: 0;
 }
@@ -149,7 +140,6 @@
   justify-content: center;
   align-items: center;
 }
-
 .footer-btn button {
   width: 226px;
   height: 60px;
@@ -174,7 +164,7 @@
 
 .footer-logo {
   color: #fff;
-  font-family: Shrikhand, 'cursive';
+  font-family: Shrikhand, "cursive";
   font-size: 22px;
   font-weight: 900;
   font-style: italic;
@@ -210,4 +200,4 @@
   display: flex;
   flex-direction: column;
   padding: 1rem;
-}
+}/*# sourceMappingURL=pagesmenu.css.map */

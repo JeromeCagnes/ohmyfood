@@ -207,7 +207,8 @@ li {
 .cards {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  column-gap: 2rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
   row-gap: 2rem;
 }
 
@@ -226,7 +227,8 @@ li {
   border: 0 solid transparent;
   border-radius: 1rem 1rem 0 0;
   box-shadow: none;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 img {
@@ -357,6 +359,4 @@ h3 {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-}
-
-/*# sourceMappingURL=homepage.css.map */
+}/*# sourceMappingURL=index.css.map */

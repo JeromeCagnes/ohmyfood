@@ -7,7 +7,7 @@
   }
   &--previous {
     position: absolute;
-    left: 1rem;
+    margin-left: 17px;
     height: 0;
     width: 2rem;
     top: 50%;
@@ -24,15 +24,17 @@
 .header-logo {
   display: flex;
   justify-content: center;
-  align-items: center;
-  max-width: 35%;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  padding: 14px 89px 13px 17px;
+
+  height: 36px;
 
   img {
-    max-width: 100%;
-    height: auto;
+    display: flex;
+    max-width: 375px;
+    margin-left: 50px;
+    align-items: center;
+    padding: 0px 19px 0px 16px;
   }
 }
 
@@ -45,7 +47,7 @@
 .container {
   margin-top: -4rem;
   border-radius: 2rem 2rem 0 0;
-  background-color: #f6f6f6;
+  background-color: $color-background;
   z-index: 1;
   position: relative;
 
@@ -57,7 +59,7 @@
   }
 
   &__title {
-    font-family: 'Shrikhand', 'cursive';
+    font-family: $font-family-second;
   }
 
   &__btn {
@@ -96,7 +98,7 @@
 
   &__like {
     transition-duration: 0.25s;
-    background-color: #f6f6f6;
+    background-color: $color-background;
     position: absolute;
     top: 0;
     left: 0;
@@ -120,42 +122,61 @@
 .menu__entete {
   display: flex;
   justify-content: space-between;
-  font-size: 1rem;
 }
 
 .menu__btn {
-  margin-right: 50px;
+  margin-right: 41px;
+
+  border: none;
+  background-color: inherit;
 }
 
 .page__title {
-  font-family: shrikhand;
-  font-size: 1.7rem;
+  font-family: $font-family-second;
+  font-size: 28px;
   margin-left: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 32px;
 }
 
 .entrees__title {
-  border-bottom: 5px solid #99e2d0;
+  border-bottom: 5px solid $third-color;
   width: 10%;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
   text-transform: uppercase;
   margin-bottom: 5px;
   font-weight: normal;
   margin-left: 10px;
+  margin-top: 40px;
 }
 
 .menu-contenu {
   background-color: white;
-  padding: 0.4rem;
+  padding: 15px;
   border-radius: 0.75rem;
   margin: 10px;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
-
   cursor: pointer;
-  max-width: 100%;
+  height: 45px;
 }
+
 .menu__description,
 .menu__prix p {
   margin: 0;
+}
+.menu__title {
+  overflow: hidden;
+  color: $color-black;
+  text-overflow: ellipsis;
+
+  font-family: $font-family-first;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: contents;
 }
 
 .footer-btn {
@@ -164,18 +185,16 @@
   justify-content: center;
   align-items: center;
   button {
-    width: 226px;
-    height: 60px;
+    width: 186px;
+    height: 50px;
     border: 0;
     background-image: linear-gradient(
-      0deg,
-      rgba(147, 86, 220, 0.9),
-      rgba(255, 121, 218, 0.9)
+      (193deg, #9356dc -11.44%, #ff79da 123.93%)
     );
-    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 
     border-radius: 100px;
-    color: #fff;
+    color: $color-white;
     font-size: 1.1rem;
     font-weight: 500;
     cursor: pointer;
@@ -188,12 +207,12 @@
 }
 
 .footer {
-  background-color: #353535;
+  background-color: $color-dark;
 }
 
 .footer-logo {
-  color: #fff;
-  font-family: Shrikhand, 'cursive';
+  color: $color-white;
+  font-family: $font-family-second;
   font-size: 22px;
   font-weight: 900;
   font-style: italic;
@@ -216,12 +235,12 @@
 .footer-icon {
   width: 1.2rem;
   margin-right: 0.5rem;
-  color: #fff;
+  color: $color-white;
 }
 
 .footer-link {
   text-decoration: none;
-  color: #fff;
+  color: $color-white;
   margin-left: 10px;
 }
 

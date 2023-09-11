@@ -2,25 +2,36 @@
 $primary-color: #9356dc;
 $secondary-color: #ff79da;
 $third-color: #99e2d0;
+$fourth-color: #eaeaea;
 
-// VARIABLES Homepage
-
-$margin-zero: 0;
-$margin-auto: auto;
-$padding-1rem: 1rem;
-$padding-2rem: 2rem;
-$font-weight-bold: bold;
-$font-weight-900: 900;
-$font-weight-700: 700;
-$font-weight-500: 500;
-$font-weight-400: 400;
-$font-weight-300: 300;
+$color-background: #f6f6f6;
 $color-white: #fff;
 $color-black: #000;
 $color-light-grey: #f3f3f3;
 $color-dark-grey: #686868;
 $color-grey: #7e7e7e;
 $color-dark: #353535;
+$color-dark-green: #008766;
+//GRADIANTS
+$color-button-gradiant: linear-gradient(
+  193deg,
+  #9356dc -11.44%,
+  #ff79da 123.93%
+);
+//SHADOWS
 $box-shadow-light: 0 0 0.5rem rgba(0, 0, 0, 0.25);
 $box-shadow-medium: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
 $box-shadow-dark: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+//POLICES
+$font-family-first: 'roboto', sans-serif;
+$font-family-second: 'Shrikhand', sans-serif;
+$font-weight-bold: bold;
+$font-weight-900: 900;
+$font-weight-700: 700;
+$font-weight-500: 500;
+$font-weight-400: 400;
+$font-weight-300: 300;
+$margin-zero: 0;
+$margin-auto: auto;
+$padding-1rem: 1rem;
+$padding-2rem: 2rem;

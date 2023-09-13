@@ -14,7 +14,6 @@ html {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   background-color: $color-white;
 }
-
 .header-logo {
   display: block;
   margin: 0 auto;
@@ -23,6 +22,7 @@ html {
   padding-top: 14px;
   padding-bottom: 10px;
 }
+
 div,
 main {
   display: block;
@@ -398,13 +398,22 @@ h3 {
   padding: 1rem;
 }
 /* RESPONSIVE DESKTOP MEDIA QUERIES*/
-@media (min-width: 768px) {
-  body,
-  html {
-    margin: 0;
-    font-family: $font-family-first;
-    scroll-behavior: smooth;
+html,
+body {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+@media (min-width: 1024px) {
+  body {
+    max-width: 1440px;
+    margin: 0 auto; /* Centrer le contenu si l'écran est plus large que 1440px */
+  }
+
+  .header {
     display: block;
+    //width: 1440px;
+    margin: auto;
   }
 
   .local {
@@ -412,7 +421,6 @@ h3 {
     height: 20px;
     justify-content: center;
     align-items: center;
-    padding-right: 35px;
   }
   .local-icon {
     width: 12px;
@@ -429,7 +437,6 @@ h3 {
   .header-logo {
     display: flex;
     height: 30px;
-    width: 200px;
     margin: 0 auto;
     padding: 30px 0px 31.798px 0px;
     justify-content: center;
@@ -448,14 +455,13 @@ h3 {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    padding-right: 86px;
     margin: 0 auto;
   }
   .hero {
-    width: 100%;
     height: 179px;
     padding: 30px;
-    margin: 0 auto;
+
+    // width: 1440px;
   }
   .hero-subtitle {
     font-weight: 300;
@@ -474,33 +480,72 @@ h3 {
   }
   .tuto {
     display: flex;
-
     flex-direction: column;
     align-items: flex-start;
     gap: 25px;
+    padding-top: 7px;
+    height: 72px;
   }
   .tuto-title {
-    padding: 50px 180px;
-    margin-top: 50px;
-    margin-bottom: 25px;
+    margin-top: 41px;
+    margin-bottom: 2px;
   }
 
   .tuto-steps {
     display: flex;
     align-items: flex-start;
-    padding: 50px 180px;
-    gap: 25px;
+    //margin-left: 161px;
+    margin-top: 25px;
+  }
+  .tuto-step {
+    padding: 1.5rem;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 1.25rem;
+    background-color: $color-background;
+    display: flex;
+    position: relative;
+    height: 15px;
+    width: 248px;
+    margin-left: 36px;
+    margin-right: 36px;
+    margin-bottom: 24px;
+    padding-left: 38px;
+    align-items: center;
+  }
+  .tuto-icon {
+    margin-right: 23px;
+    margin-left: 12px;
+    color: $color-grey;
   }
   .restaurants {
-    padding: 0px 180px;
+    background-color: $color-background;
+    max-width: 1440px;
+    width: 100%;
   }
+
+  .restaurants-title {
+    // margin-left: 180px;
+    margin-bottom: 28px;
+  }
+
   .cards {
     grid-template-columns: repeat(2, 1fr);
-    gap: 100px;
+    // gap: 100px;
+    width: 65%;
+    // margin-left: 180px;
+    // margin-right: 180px;
   }
   .card-content {
     height: 77px;
     width: 384px;
+  }
+  .card-img {
+    height: 231px;
+    width: 498px;
+    border: 0 solid transparent;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: none;
+    object-fit: cover;
   }
   .card-title {
     font-family: $font-family-first;
@@ -520,5 +565,39 @@ h3 {
     margin-bottom: 12px;
     margin-left: 18px;
     height: 24px;
+  }
+  .fa-2x {
+    margin-bottom: 5px;
+    margin-top: 18px;
+  }
+
+  .footer {
+    height: 114px;
+    padding-top: 30px;
+    position: relative;
+  }
+  .footer-logo {
+    color: #fff;
+    font-family: $font-family-second;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    margin-right: 25px;
+    width: 139px;
+    height: 27px;
+    position: absolute; /* Position absolue pour le logo */
+    bottom: 0; /* En bas */
+    right: 0; /* À droite */
+  }
+  .footer-list-content {
+    margin: 0;
+    display: inline-block;
+    color: #fff;
+    font-family: $font-family-second;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
   }
 }

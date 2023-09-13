@@ -109,6 +109,10 @@ h2 {
   height: 200px;
 }
 
+.hero-title-desktop {
+  display: none;
+}
+
 .hero-subtitle {
   font-weight: 300;
   width: 315px;
@@ -424,4 +428,125 @@ h3 {
   display: flex;
   flex-direction: column;
   padding: 1rem;
+}
+
+/* RESPONSIVE DESKTOP MEDIA QUERIES*/
+@media (min-width: 768px) {
+  body,
+  html {
+    margin: 0;
+    font-family: "roboto", sans-serif;
+    scroll-behavior: smooth;
+    display: block;
+  }
+  .local {
+    display: flex;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-right: 35px;
+  }
+  .local-icon {
+    width: 12px;
+    height: 16px;
+    margin-right: 17px;
+  }
+  .local-text {
+    font-family: "roboto", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .header-logo {
+    display: flex;
+    height: 30px;
+    width: 200px;
+    margin: 0 auto;
+    padding: 30px 0px 31.798px 0px;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-title {
+    display: none;
+  }
+  .hero-title-desktop {
+    display: inline;
+    text-align: center;
+    font-family: "roboto", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-right: 86px;
+    margin: 0 auto;
+  }
+  .hero {
+    width: 100%;
+    height: 179px;
+    padding: 30px;
+    margin: 0 auto;
+  }
+  .hero-subtitle {
+    font-weight: 300;
+    width: 531px;
+    height: 46px;
+    margin-top: 18px;
+    font-style: normal;
+    font-family: "roboto", sans-serif;
+    line-height: normal;
+    margin-bottom: 18px;
+  }
+  .hero-btn {
+    margin-right: 20px;
+    margin-left: -10px;
+    width: 218px;
+  }
+  .tuto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+  }
+  .tuto-title {
+    padding: 50px 180px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
+  .tuto-steps {
+    display: flex;
+    align-items: flex-start;
+    padding: 50px 180px;
+    gap: 25px;
+  }
+  .restaurants {
+    padding: 0px 180px;
+  }
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+  }
+  .card-content {
+    height: 77px;
+    width: 384px;
+  }
+  .card-title {
+    font-family: "roboto", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 5px;
+    margin-left: 18px;
+  }
+  .card-subtitle {
+    font-family: "roboto", sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 12px;
+    margin-left: 18px;
+    height: 24px;
+  }
 }

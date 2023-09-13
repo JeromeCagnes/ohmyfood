@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header--menupage {
   position: relative;
 }
@@ -219,4 +220,84 @@
   display: flex;
   flex-direction: column;
   padding: 1rem;
+}
+
+/* RESPONSIVE DESKTOP MEDIA QUERIES*/
+html,
+body {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1024px) {
+  body {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .header {
+    display: block;
+    margin: auto;
+  }
+  .header-logo img {
+    display: flex;
+    max-width: 200px;
+    height: 34px;
+    margin-left: 50px;
+    align-items: center;
+    padding: 0px 19px 0px 16px;
+  }
+  .restaurant-img {
+    width: 1440px;
+    height: 375px;
+  }
+  .container {
+    width: 80%;
+    margin-left: 140px;
+  }
+  .page__title {
+    font-family: "Shrikhand", sans-serif;
+    text-align: center;
+    font-size: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 32px;
+  }
+  .submenus {
+    width: 60%;
+    padding-left: 177px;
+  }
+  .footer {
+    height: 114px;
+    padding-top: 30px;
+    position: relative;
+    width: 100%;
+  }
+  .footer-logo {
+    color: #fff;
+    font-family: "Shrikhand", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    margin-right: 25px;
+    width: 139px;
+    height: 27px;
+    position: absolute; /* Position absolue pour le logo */
+    bottom: 0; /* En bas */
+    right: 0; /* À droite */
+  }
+  .footer-list-content {
+    margin: 0;
+    display: inline-block;
+    color: #fff;
+    font-family: "Shrikhand", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+  }
 }/*# sourceMappingURL=pagesmenu.css.map */

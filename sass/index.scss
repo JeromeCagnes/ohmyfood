@@ -407,12 +407,11 @@ body {
 @media (min-width: 1024px) {
   body {
     max-width: 1440px;
-    margin: 0 auto; /* Centrer le contenu si l'écran est plus large que 1440px */
+    margin: 0 auto;
   }
 
   .header {
     display: block;
-    //width: 1440px;
     margin: auto;
   }
 
@@ -460,8 +459,6 @@ body {
   .hero {
     height: 179px;
     padding: 30px;
-
-    // width: 1440px;
   }
   .hero-subtitle {
     font-weight: 300;
@@ -485,16 +482,18 @@ body {
     gap: 25px;
     padding-top: 7px;
     height: 72px;
+    padding-left: 58px;
   }
   .tuto-title {
     margin-top: 41px;
     margin-bottom: 2px;
+    padding-left: 53px;
   }
 
   .tuto-steps {
     display: flex;
     align-items: flex-start;
-    //margin-left: 161px;
+    padding-left: 40px;
     margin-top: 25px;
   }
   .tuto-step {
@@ -524,16 +523,15 @@ body {
   }
 
   .restaurants-title {
-    // margin-left: 180px;
+    padding-left: 115px;
     margin-bottom: 28px;
   }
 
   .cards {
     grid-template-columns: repeat(2, 1fr);
-    // gap: 100px;
+    padding-left: 115px;
     width: 65%;
-    // margin-left: 180px;
-    // margin-right: 180px;
+    gap: 100px;
   }
   .card-content {
     height: 77px;
@@ -575,6 +573,7 @@ body {
     height: 114px;
     padding-top: 30px;
     position: relative;
+    width: 100%;
   }
   .footer-logo {
     color: #fff;

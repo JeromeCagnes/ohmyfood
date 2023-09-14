@@ -39,6 +39,11 @@ main {
   position: relative;
   padding-bottom: 20px;
 }
+#localisation {
+  background-color: $fourth-color;
+  border: none;
+  outline: none;
+}
 section {
   display: block;
 }
@@ -100,7 +105,7 @@ h2 {
   padding-bottom: 5rem;
   text-align: center;
   background-color: $color-background;
-  height: 200px;
+  height: 287px;
 }
 .hero-title-desktop {
   display: none;
@@ -147,10 +152,10 @@ p {
   background-color: $color-background;
   display: flex;
   position: relative;
-  height: 3%;
+  height: 72px;
   margin-left: 32px;
   margin-right: 20px;
-  margin-bottom: 24px;
+  margin-bottom: 40px;
   align-items: center;
 }
 .tuto {
@@ -225,6 +230,7 @@ li {
 .restaurants {
   background-color: $color-background;
   padding: 2rem 1rem;
+  margin-top: 280px;
 }
 .cards {
   display: grid;

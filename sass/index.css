@@ -40,6 +40,12 @@ main {
   padding-bottom: 20px;
 }
 
+#localisation {
+  background-color: #eaeaea;
+  border: none;
+  outline: none;
+}
+
 section {
   display: block;
 }
@@ -107,7 +113,7 @@ h2 {
   padding-bottom: 5rem;
   text-align: center;
   background-color: #f6f6f6;
-  height: 200px;
+  height: 287px;
 }
 
 .hero-title-desktop {
@@ -151,10 +157,10 @@ p {
   background-color: #f6f6f6;
   display: flex;
   position: relative;
-  height: 3%;
+  height: 72px;
   margin-left: 32px;
   margin-right: 20px;
-  margin-bottom: 24px;
+  margin-bottom: 40px;
   align-items: center;
 }
 
@@ -241,6 +247,7 @@ li {
 .restaurants {
   background-color: #f6f6f6;
   padding: 2rem 1rem;
+  margin-top: 280px;
 }
 
 .cards {

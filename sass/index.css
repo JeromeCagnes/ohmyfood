@@ -490,7 +490,7 @@ body {
     align-items: flex-start;
     padding-top: 7px;
     height: 72px;
-    padding-left: 58px;
+    padding-left: 120px;
   }
   .tuto-title {
     margin-top: 41px;
@@ -525,7 +525,8 @@ body {
     background-color: #f6f6f6;
   }
   .restaurants-title {
-    margin-top: 41px;
+    width: 80%;
+    padding-left: 100px;
   }
   .cards {
     grid-template-columns: repeat(2, 1fr);
@@ -536,6 +537,7 @@ body {
   .card-content {
     height: 77px;
     width: 384px;
+    display: contents;
   }
   .card-img {
     height: 231px;
@@ -567,6 +569,12 @@ body {
   .fa-2x {
     margin-bottom: 5px;
     margin-top: 18px;
+  }
+  .heart-colored {
+    margin-bottom: 5px;
+    margin-top: 18px;
+    color: #ff79da;
+    font-size: 2em;
   }
   .footer {
     display: flex;
@@ -610,15 +618,3 @@ body {
 .mentions-legales {
   margin-left: 20px;
 }
-
-/* mise en page resto */
-.tuto {
-  padding-left: 120px;
-}
-
-.restaurants-title {
-  width: 80%;
-  padding-left: 100px;
-}
-
-/* Fin mis een page resto */

@@ -38,12 +38,15 @@ main {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   position: relative;
   padding-bottom: 20px;
+  padding-left: 99px;
 }
 
 #localisation {
   background-color: #eaeaea;
   border: none;
   outline: none;
+  font-size: 20px;
+  font-weight: 800;
 }
 
 section {
@@ -53,7 +56,8 @@ section {
 .local-icon {
   margin-right: 1rem;
   width: 12px;
-  height: 16px;
+  height: 21px;
+  font-size: 16px;
 }
 
 .fa,
@@ -108,12 +112,14 @@ h2 {
 }
 
 .hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 2rem;
-  padding-top: 3rem;
-  padding-bottom: 5rem;
   text-align: center;
   background-color: #f6f6f6;
-  height: 287px;
+  height: 249px;
 }
 
 .hero-title-desktop {
@@ -123,9 +129,8 @@ h2 {
 .hero-subtitle {
   font-weight: 300;
   width: 315px;
-  height: 46px;
-  margin: 10% auto;
   font-family: "roboto", sans-serif;
+  margin-bottom: 50px;
 }
 
 p {
@@ -157,7 +162,6 @@ p {
   background-color: #f6f6f6;
   display: flex;
   position: relative;
-  height: 72px;
   margin-left: 32px;
   margin-right: 20px;
   margin-bottom: 40px;
@@ -172,7 +176,6 @@ p {
 
 .tuto-title {
   margin-left: 20px;
-  margin-top: 48px;
   margin-bottom: 26px;
   font-family: "roboto", sans-serif;
   font-size: 24px;
@@ -180,7 +183,6 @@ p {
   font-weight: 700;
   line-height: normal;
   width: 275px;
-  height: 31px;
 }
 
 .tuto-steps {
@@ -247,7 +249,6 @@ li {
 .restaurants {
   background-color: #f6f6f6;
   padding: 2rem 1rem;
-  margin-top: 280px;
 }
 
 .cards {

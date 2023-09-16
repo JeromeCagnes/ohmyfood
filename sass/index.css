@@ -1,7 +1,6 @@
-@charset "UTF-8";
 body,
 html {
-  margin: 0;
+  margin: 0 auto;
   font-family: "roboto", sans-serif;
   scroll-behavior: smooth;
   display: block;
@@ -38,12 +37,15 @@ main {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   position: relative;
   padding-bottom: 20px;
+  padding-left: 99px;
 }
 
 #localisation {
   background-color: #eaeaea;
   border: none;
   outline: none;
+  font-size: 20px;
+  font-weight: 800;
 }
 
 section {
@@ -53,7 +55,8 @@ section {
 .local-icon {
   margin-right: 1rem;
   width: 12px;
-  height: 16px;
+  height: 21px;
+  font-size: 16px;
 }
 
 .fa,
@@ -108,12 +111,14 @@ h2 {
 }
 
 .hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 2rem;
-  padding-top: 3rem;
-  padding-bottom: 5rem;
   text-align: center;
   background-color: #f6f6f6;
-  height: 287px;
+  height: 249px;
 }
 
 .hero-title-desktop {
@@ -123,9 +128,8 @@ h2 {
 .hero-subtitle {
   font-weight: 300;
   width: 315px;
-  height: 46px;
-  margin: 10% auto;
   font-family: "roboto", sans-serif;
+  margin-bottom: 50px;
 }
 
 p {
@@ -157,7 +161,6 @@ p {
   background-color: #f6f6f6;
   display: flex;
   position: relative;
-  height: 72px;
   margin-left: 32px;
   margin-right: 20px;
   margin-bottom: 40px;
@@ -172,7 +175,6 @@ p {
 
 .tuto-title {
   margin-left: 20px;
-  margin-top: 48px;
   margin-bottom: 26px;
   font-family: "roboto", sans-serif;
   font-size: 24px;
@@ -180,7 +182,6 @@ p {
   font-weight: 700;
   line-height: normal;
   width: 275px;
-  height: 31px;
 }
 
 .tuto-steps {
@@ -247,7 +248,6 @@ li {
 .restaurants {
   background-color: #f6f6f6;
   padding: 2rem 1rem;
-  margin-top: 280px;
 }
 
 .cards {
@@ -255,6 +255,7 @@ li {
   grid-template-columns: repeat(1, 1fr);
   column-gap: 2rem;
   row-gap: 2rem;
+  padding-left: 100px;
 }
 
 .card {
@@ -451,36 +452,6 @@ body {
     max-width: 1440px;
     margin: 0 auto;
   }
-  .header {
-    display: block;
-    margin: auto;
-  }
-  .local {
-    display: flex;
-    height: 20px;
-    justify-content: center;
-    align-items: center;
-  }
-  .local-icon {
-    width: 12px;
-    height: 16px;
-    margin-right: 17px;
-  }
-  .local-text {
-    font-family: "roboto", sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-  }
-  .header-logo {
-    display: flex;
-    height: 30px;
-    margin: 0 auto;
-    padding: 30px 0px 31.798px 0px;
-    justify-content: center;
-    align-items: center;
-  }
   .hero-title {
     display: none;
   }
@@ -502,7 +473,7 @@ body {
     font-weight: 300;
     width: 531px;
     height: 46px;
-    margin-top: 18px;
+    margin-top: 35px;
     font-style: normal;
     font-family: "roboto", sans-serif;
     line-height: normal;
@@ -517,7 +488,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 25px;
     padding-top: 7px;
     height: 72px;
     padding-left: 58px;
@@ -525,12 +495,10 @@ body {
   .tuto-title {
     margin-top: 41px;
     margin-bottom: 2px;
-    padding-left: 53px;
   }
   .tuto-steps {
     display: flex;
     align-items: flex-start;
-    padding-left: 40px;
     margin-top: 25px;
   }
   .tuto-step {
@@ -555,18 +523,15 @@ body {
   }
   .restaurants {
     background-color: #f6f6f6;
-    max-width: 1440px;
-    width: 100%;
   }
   .restaurants-title {
-    padding-left: 115px;
-    margin-bottom: 28px;
+    margin-top: 41px;
   }
   .cards {
     grid-template-columns: repeat(2, 1fr);
-    padding-left: 115px;
+    margin-bottom: 30px;
     width: 65%;
-    gap: 100px;
+    gap: 60px;
   }
   .card-content {
     height: 77px;
@@ -604,10 +569,10 @@ body {
     margin-top: 18px;
   }
   .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     height: 114px;
-    padding-top: 30px;
-    position: relative;
-    width: 100%;
   }
   .footer-logo {
     color: #fff;
@@ -615,25 +580,45 @@ body {
     font-size: 18px;
     font-weight: 400;
     font-style: normal;
-    line-height: normal;
-    margin-right: 25px;
     width: 139px;
-    height: 27px;
-    position: absolute;
-    /* Position absolue pour le logo */
-    bottom: 0;
-    /* En bas */
-    right: 0;
-    /* À droite */
+    margin-left: auto;
+    display: flex;
+    order: 2;
+    font-size: 1.5em;
+    margin-right: 50px;
+  }
+  .footer-list {
+    list-style: none;
+    flex-direction: row;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    gap: 10px;
   }
   .footer-list-content {
+    font-family: "roboto", sans-serif;
     margin: 0;
-    display: inline-block;
     color: #fff;
-    font-family: "Shrikhand", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     font-style: normal;
-    line-height: normal;
+    line-height: 26px;
   }
 }
+
+.mentions-legales {
+  margin-left: 20px;
+}
+
+/* mise en page resto */
+.tuto {
+  padding-left: 120px;
+}
+
+.restaurants-title {
+  width: 80%;
+  padding-left: 100px;
+}
+
+/* Fin mis een page resto */

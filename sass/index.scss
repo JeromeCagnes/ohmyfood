@@ -340,10 +340,24 @@ h3 {
   margin-right: 10px;
 }
 
+.heart-colored img {
+  margin-right: 10px;
+  width: 22px;
+  height: 21px;
+  float: right;
+  margin-top: -25px;
+}
 .heart-empty {
   margin-right: 10px;
   align-items: center;
   text-align: right;
+}
+.heart-empty img {
+  margin-right: 10px;
+  width: 22px;
+  height: 21px;
+  float: right;
+  margin-top: -25px;
 }
 
 .far {
@@ -493,7 +507,7 @@ body {
     gap: 60px;
   }
   .card-content {
-    height: 77px;
+    height: 66px;
     width: 384px;
     display: contents;
   }

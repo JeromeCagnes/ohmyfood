@@ -255,7 +255,6 @@ li {
   grid-template-columns: repeat(1, 1fr);
   column-gap: 2rem;
   row-gap: 2rem;
-  padding-left: 100px;
 }
 
 .card {
@@ -296,12 +295,18 @@ img {
 
 .card-content {
   height: 71px;
+  margin: 0 auto;
+}
+
+.card-content .card-content {
+  display: flex;
+  align-items: center;
 }
 
 .card-title {
   margin: 22px 10px 0.25rem;
   font-family: "roboto", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -334,7 +339,7 @@ h3 {
 .card-subtitle {
   margin: 0 10px 0.25rem;
   font-family: "roboto", sans-serif;
-  font-size: 17px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -359,31 +364,10 @@ h3 {
   margin-right: 10px;
 }
 
-.fa-heart {
-  height: 21px;
-  margin-right: 21px;
-  margin-bottom: 33px;
-  background-color: initial;
-  border: 0 solid transparent;
-  padding: 0;
-  display: flex;
-  justify-content: right;
-}
-
-.fa-heart:hover {
-  opacity: 1;
-}
-
-.special-heart {
-  background: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
-  height: 21px;
-  margin-right: 21px;
-  margin-bottom: 33px;
-  background-color: initial;
-  border: 0 solid transparent;
-  padding: 0;
-  display: flex;
-  justify-content: right;
+.heart-empty {
+  margin-right: 10px;
+  align-items: center;
+  text-align: right;
 }
 
 .far {
@@ -401,7 +385,7 @@ h3 {
 
 .footer-logo {
   color: #fff;
-  font-family: "Shrikhand", sans-serif;
+  font-family: "Shrikhand", cursive;
   font-size: 22px;
   font-weight: 900;
   font-style: italic;
@@ -490,11 +474,12 @@ body {
     align-items: flex-start;
     padding-top: 7px;
     height: 72px;
-    padding-left: 120px;
+    padding-left: 100px;
   }
   .tuto-title {
     margin-top: 41px;
     margin-bottom: 2px;
+    padding-left: 30px;
   }
   .tuto-steps {
     display: flex;
@@ -523,10 +508,11 @@ body {
   }
   .restaurants {
     background-color: #f6f6f6;
+    padding: 0 10%;
+    padding-bottom: 30px;
   }
   .restaurants-title {
-    width: 80%;
-    padding-left: 100px;
+    padding-top: 50px;
   }
   .cards {
     grid-template-columns: repeat(2, 1fr);
@@ -570,11 +556,24 @@ body {
     margin-bottom: 5px;
     margin-top: 18px;
   }
-  .heart-colored {
-    margin-bottom: 5px;
-    margin-top: 18px;
-    color: #ff79da;
-    font-size: 2em;
+  .heart-colored img {
+    margin-right: 10px;
+    width: 22px;
+    height: 21px;
+    float: right;
+    margin-top: -25px;
+  }
+  .heart-empty {
+    margin-right: 10px;
+    align-items: center;
+    text-align: right;
+  }
+  .heart-empty img {
+    margin-right: 10px;
+    width: 22px;
+    height: 21px;
+    float: right;
+    margin-top: -25px;
   }
   .footer {
     display: flex;
@@ -584,7 +583,7 @@ body {
   }
   .footer-logo {
     color: #fff;
-    font-family: "Shrikhand", sans-serif;
+    font-family: "Shrikhand", cursive;
     font-size: 18px;
     font-weight: 400;
     font-style: normal;

@@ -155,7 +155,7 @@
 .menu-contenu {
   background-color: white;
   padding: 15px;
-  border-radius: 0.75rem;
+  border-radius: 1.3rem;
   margin: 10px;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   cursor: pointer;
@@ -174,7 +174,7 @@
   font-family: $font-family-first;
   font-size: 18px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   line-height: normal;
   display: contents;
 }
@@ -204,6 +204,7 @@
 .menu__prix {
   display: flex;
   justify-content: space-between;
+  margin-top: 5px;
 }
 
 .footer {
@@ -258,7 +259,6 @@ body {
 }
 @media (min-width: 1024px) {
   body {
-    max-width: 1440px;
     margin: 0 auto;
   }
 
@@ -271,12 +271,16 @@ body {
   }
   //IMAGE RESTAURANT
   .restaurant-img {
-    height: 383px;
+    width: 100%;
+    object-fit: cover;
+    height: 350px;
+  }
+  .restaurants-title {
+    gap: 2vw;
   }
   .container {
     width: 1055px;
     margin-left: 140px;
-    margin: 0 auto;
   }
   .page__title {
     font-family: $font-family-second;
@@ -299,21 +303,43 @@ body {
     width: 60%;
     margin: 0 auto;
   }
+  .entrees__title {
+    border-bottom: 5px solid #99e2d0;
+    width: 10%;
+    padding-bottom: 12px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-family: $font-family-first;
+    font-weight: 300;
+    margin-left: 10px;
+    margin-top: 25px;
+  }
   .menu__title {
     overflow: hidden;
     color: #000;
     text-overflow: ellipsis;
-    font-family: 'roboto', sans-serif;
+    font-family: $font-family-first, cursive;
     font-size: 18px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
+    line-height: normal;
+    display: contents;
+  }
+  .menu__description {
+    overflow: hidden;
+    color: #000;
+    text-overflow: ellipsis;
+    font-family: $font-family-first;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
     line-height: normal;
     display: contents;
   }
   .menu__prix {
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 5px;
   }
   .footer {
     display: flex;

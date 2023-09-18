@@ -1,7 +1,6 @@
-@charset "UTF-8";
 body,
 html {
-  margin: 0;
+  margin: 0 auto;
   font-family: "roboto", sans-serif;
   scroll-behavior: smooth;
   display: block;
@@ -298,12 +297,17 @@ img {
 
 .card-content {
   height: 71px;
+  margin: 0 auto;
+}
+.card-content .card-content {
+  display: flex;
+  align-items: center;
 }
 
 .card-title {
   margin: 22px 10px 0.25rem;
   font-family: "roboto", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -336,7 +340,7 @@ h3 {
 .card-subtitle {
   margin: 0 10px 0.25rem;
   font-family: "roboto", sans-serif;
-  font-size: 17px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -361,30 +365,10 @@ h3 {
   margin-right: 10px;
 }
 
-.fa-heart {
-  height: 21px;
-  margin-right: 21px;
-  margin-bottom: 33px;
-  background-color: initial;
-  border: 0 solid transparent;
-  padding: 0;
-  display: flex;
-  justify-content: right;
-}
-.fa-heart:hover {
-  opacity: 1;
-}
-
-.special-heart {
-  background: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
-  height: 21px;
-  margin-right: 21px;
-  margin-bottom: 33px;
-  background-color: initial;
-  border: 0 solid transparent;
-  padding: 0;
-  display: flex;
-  justify-content: right;
+.heart-empty {
+  margin-right: 10px;
+  align-items: center;
+  text-align: right;
 }
 
 .far {
@@ -402,7 +386,7 @@ h3 {
 
 .footer-logo {
   color: #fff;
-  font-family: "Shrikhand", sans-serif;
+  font-family: "Shrikhand", cursive;
   font-size: 22px;
   font-weight: 900;
   font-style: italic;
@@ -453,36 +437,6 @@ body {
     max-width: 1440px;
     margin: 0 auto;
   }
-  .header {
-    display: block;
-    margin: auto;
-  }
-  .local {
-    display: flex;
-    height: 20px;
-    justify-content: center;
-    align-items: center;
-  }
-  .local-icon {
-    width: 12px;
-    height: 16px;
-    margin-right: 17px;
-  }
-  .local-text {
-    font-family: "roboto", sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-  }
-  .header-logo {
-    display: flex;
-    height: 30px;
-    margin: 0 auto;
-    padding: 30px 0px 31.798px 0px;
-    justify-content: center;
-    align-items: center;
-  }
   .hero-title {
     display: none;
   }
@@ -504,7 +458,7 @@ body {
     font-weight: 300;
     width: 531px;
     height: 46px;
-    margin-top: 18px;
+    margin-top: 35px;
     font-style: normal;
     font-family: "roboto", sans-serif;
     line-height: normal;
@@ -519,20 +473,18 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 25px;
     padding-top: 7px;
     height: 72px;
-    padding-left: 58px;
+    padding-left: 100px;
   }
   .tuto-title {
     margin-top: 41px;
     margin-bottom: 2px;
-    padding-left: 53px;
+    padding-left: 30px;
   }
   .tuto-steps {
     display: flex;
     align-items: flex-start;
-    padding-left: 40px;
     margin-top: 25px;
   }
   .tuto-step {
@@ -557,22 +509,22 @@ body {
   }
   .restaurants {
     background-color: #f6f6f6;
-    max-width: 1440px;
-    width: 100%;
+    padding: 0 10%;
+    padding-bottom: 30px;
   }
   .restaurants-title {
-    padding-left: 115px;
-    margin-bottom: 28px;
+    padding-top: 50px;
   }
   .cards {
     grid-template-columns: repeat(2, 1fr);
-    padding-left: 115px;
+    margin-bottom: 30px;
     width: 65%;
-    gap: 100px;
+    gap: 60px;
   }
   .card-content {
     height: 77px;
     width: 384px;
+    display: contents;
   }
   .card-img {
     height: 231px;
@@ -606,34 +558,63 @@ body {
     margin-bottom: 5px;
     margin-top: 18px;
   }
+  .heart-colored img {
+    margin-right: 10px;
+    width: 22px;
+    height: 21px;
+    float: right;
+    margin-top: -25px;
+  }
+  .heart-empty {
+    margin-right: 10px;
+    align-items: center;
+    text-align: right;
+  }
+  .heart-empty img {
+    margin-right: 10px;
+    width: 22px;
+    height: 21px;
+    float: right;
+    margin-top: -25px;
+  }
   .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     height: 114px;
-    padding-top: 30px;
-    position: relative;
-    width: 100%;
   }
   .footer-logo {
     color: #fff;
-    font-family: "Shrikhand", sans-serif;
+    font-family: "Shrikhand", cursive;
     font-size: 18px;
     font-weight: 400;
     font-style: normal;
-    line-height: normal;
-    margin-right: 25px;
     width: 139px;
-    height: 27px;
-    position: absolute; /* Position absolue pour le logo */
-    bottom: 0; /* En bas */
-    right: 0; /* À droite */
+    margin-left: auto;
+    display: flex;
+    order: 2;
+    font-size: 1.5em;
+    margin-right: 50px;
+  }
+  .footer-list {
+    list-style: none;
+    flex-direction: row;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    gap: 10px;
   }
   .footer-list-content {
+    font-family: "roboto", sans-serif;
     margin: 0;
-    display: inline-block;
     color: #fff;
-    font-family: "Shrikhand", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     font-style: normal;
-    line-height: normal;
+    line-height: 26px;
   }
+}
+.mentions-legales {
+  margin-left: 20px;
 }/*# sourceMappingURL=index.css.map */

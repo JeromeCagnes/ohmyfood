@@ -96,8 +96,7 @@
     }
   }
 
-  &__like {
-    transition-duration: 0.25s;
+  &__like:hover {
     background-color: $color-background;
     position: absolute;
     top: 0;
@@ -261,7 +260,6 @@ body {
   body {
     margin: 0 auto;
   }
-
   .header {
     display: block;
     margin: auto;
@@ -275,12 +273,29 @@ body {
     object-fit: cover;
     height: 350px;
   }
+
   .restaurants-title {
     gap: 2vw;
   }
   .container {
     width: 1055px;
     margin-left: 140px;
+  }
+  .menu-contenu {
+    background-color: white;
+    padding: 15px;
+    border-radius: 1.3rem;
+    margin: 10px;
+    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    height: 45px;
+    margin-bottom: 12px;
+    width: 110%;
+  }
+  .menu__entete {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
   }
   .page__title {
     font-family: $font-family-second;
@@ -291,17 +306,20 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-top: 32px;
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
-  .fa-heart {
-    font-size: 2em;
+  .heart-empty img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
   .submenus {
     width: 60%;
     margin: 0 auto;
+    padding-right: 118px;
   }
   .entrees__title {
     border-bottom: 5px solid #99e2d0;

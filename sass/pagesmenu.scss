@@ -27,7 +27,6 @@
   justify-content: center;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   padding: 14px 89px 13px 17px;
-
   height: 36px;
 
   img {
@@ -97,8 +96,7 @@
     }
   }
 
-  &__like {
-    transition-duration: 0.25s;
+  &__like:hover {
     background-color: $color-background;
     position: absolute;
     top: 0;
@@ -127,7 +125,6 @@
 
 .menu__btn {
   margin-right: 41px;
-
   border: none;
   background-color: inherit;
 }
@@ -172,7 +169,6 @@
   overflow: hidden;
   color: $color-black;
   text-overflow: ellipsis;
-
   font-family: $font-family-first;
   font-size: 18px;
   font-style: normal;
@@ -261,70 +257,127 @@ body {
 
 @media (min-width: 1024px) {
   body {
-    max-width: 1440px;
     margin: 0 auto;
   }
 
   .header {
     display: block;
     margin: auto;
-  }
 
-  .header-logo img {
-    height: 34px;
+    &-logo {
+      img {
+        height: 34px;
+      }
+    }
   }
 
   //IMAGE RESTAURANT
   .restaurant-img {
-    height: 383px;
+    width: 100%;
+    object-fit: cover;
+    height: 350px;
+  }
+
+  .restaurants-title {
+    gap: 2vw;
   }
 
   .container {
-    width: 1055px;
-    margin-left: 140px;
-    margin: 0 auto;
-  }
+    width: 100%;
 
-  .page__title {
-    font-family: $font-family-second;
-    text-align: center;
-    font-size: 28px;
-    margin-left: auto;
-    margin-right: auto;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-top: 32px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
+    .menu-contenu {
+      background-color: white;
+      padding: 15px;
+      border-radius: 1.3rem;
+      margin: 10px;
+      box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      height: 45px;
+      margin-bottom: 12px;
+      width: 110%;
+    }
 
-  .fa-heart {
-    font-size: 2em;
-  }
+    .menu__entete {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px;
+    }
 
-  .submenus {
-    width: 60%;
-    margin: 0 auto;
-  }
+    .page__title {
+      font-family: $font-family-second;
+      text-align: center;
+      font-size: 28px;
+      margin-left: auto;
+      margin-right: auto;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-top: 50px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
 
-  .menu__title {
-    overflow: hidden;
-    color: #000;
-    text-overflow: ellipsis;
-    font-family: 'roboto', sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    display: contents;
-  }
+    .heart-empty img {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
 
-  .menu__prix {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
+    .submenus {
+      width: 60%;
+      margin: 0 auto;
+      padding-right: 118px;
+    }
+
+    .entrees__title {
+      border-bottom: 5px solid #99e2d0;
+      width: 10%;
+      padding-bottom: 12px;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      font-family: $font-family-first;
+      font-weight: 300;
+      margin-left: 10px;
+      margin-top: 25px;
+    }
+
+    .menu__title {
+      overflow: hidden;
+      color: #000;
+      text-overflow: ellipsis;
+      font-family: $font-family-first, cursive;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      display: contents;
+    }
+
+    .menu__description {
+      overflow: hidden;
+      color: #000;
+      text-overflow: ellipsis;
+      font-family: $font-family-first;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      display: contents;
+    }
+
+    .menu__prix {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 5px;
+    }
+
+    .footer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 114px;
+    }
   }
 
   .footer {
@@ -346,29 +399,29 @@ body {
     order: 2;
     font-size: 1.5em;
     margin-right: 50px;
+
+    .footer-list {
+      list-style: none;
+      flex-direction: row;
+      margin: 0;
+      display: flex;
+      justify-content: flex-end;
+      width: 80%;
+      gap: 10px;
+
+      .footer-list-content {
+        font-family: $font-family-first;
+        margin: 0;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 26px;
+      }
+    }
   }
 
-  .footer-list {
-    list-style: none;
-    flex-direction: row;
-    margin: 0;
-    display: flex;
-    justify-content: flex-end;
-    width: 80%;
-    gap: 10px;
+  .mentions-legales {
+    margin-left: 20px;
   }
-
-  .footer-list-content {
-    font-family: $font-family-first;
-    margin: 0;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 26px;
-  }
-}
-
-.mentions-legales {
-  margin-left: 20px;
 }

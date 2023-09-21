@@ -79,8 +79,7 @@
   width: 100%;
   background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
 }
-.container__like {
-  transition-duration: 0.25s;
+.container__like:hover {
   background-color: #f6f6f6;
   position: absolute;
   top: 0;
@@ -233,7 +232,6 @@ body {
 
 @media (min-width: 1024px) {
   body {
-    max-width: 1440px;
     margin: 0 auto;
   }
   .header {
@@ -244,14 +242,34 @@ body {
     height: 34px;
   }
   .restaurant-img {
-    height: 383px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 350px;
+  }
+  .restaurants-title {
+    gap: 2vw;
   }
   .container {
-    width: 1055px;
-    margin-left: 140px;
-    margin: 0 auto;
+    width: 100%;
   }
-  .page__title {
+  .container .menu-contenu {
+    background-color: white;
+    padding: 15px;
+    border-radius: 1.3rem;
+    margin: 10px;
+    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    height: 45px;
+    margin-bottom: 12px;
+    width: 110%;
+  }
+  .container .menu__entete {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  .container .page__title {
     font-family: "Shrikhand", sans-serif;
     text-align: center;
     font-size: 28px;
@@ -260,33 +278,64 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-top: 32px;
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
-  .fa-heart {
-    font-size: 2em;
+  .container .heart-empty img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
-  .submenus {
+  .container .submenus {
     width: 60%;
     margin: 0 auto;
+    padding-right: 118px;
   }
-  .menu__title {
+  .container .entrees__title {
+    border-bottom: 5px solid #99e2d0;
+    width: 10%;
+    padding-bottom: 12px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-family: "roboto", sans-serif;
+    font-weight: 300;
+    margin-left: 10px;
+    margin-top: 25px;
+  }
+  .container .menu__title {
+    overflow: hidden;
+    color: #000;
+    text-overflow: ellipsis;
+    font-family: "roboto", sans-serif, cursive;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: contents;
+  }
+  .container .menu__description {
     overflow: hidden;
     color: #000;
     text-overflow: ellipsis;
     font-family: "roboto", sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 300;
     line-height: normal;
     display: contents;
   }
-  .menu__prix {
+  .container .menu__prix {
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 5px;
+  }
+  .container .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 114px;
   }
   .footer {
     display: flex;
@@ -307,7 +356,7 @@ body {
     font-size: 1.5em;
     margin-right: 50px;
   }
-  .footer-list {
+  .footer-logo .footer-list {
     list-style: none;
     flex-direction: row;
     margin: 0;
@@ -316,7 +365,7 @@ body {
     width: 80%;
     gap: 10px;
   }
-  .footer-list-content {
+  .footer-logo .footer-list .footer-list-content {
     font-family: "roboto", sans-serif;
     margin: 0;
     color: #fff;
@@ -325,7 +374,7 @@ body {
     font-style: normal;
     line-height: 26px;
   }
-}
-.mentions-legales {
-  margin-left: 20px;
+  .mentions-legales {
+    margin-left: 20px;
+  }
 }/*# sourceMappingURL=pagesmenu.css.map */

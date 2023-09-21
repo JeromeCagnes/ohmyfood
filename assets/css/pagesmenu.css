@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header--menupage {
   position: relative;
 }
@@ -48,7 +49,7 @@
   justify-content: space-between;
 }
 .container__title {
-  font-family: "Shrikhand", cursive;
+  font-family: "Shrikhand", sans-serif;
 }
 .container__btn {
   height: 2rem;
@@ -77,7 +78,8 @@
   width: 100%;
   background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
 }
-.container__like:hover {
+.container__like {
+  transition-duration: 0.25s;
   background-color: #f6f6f6;
   position: absolute;
   top: 0;
@@ -105,7 +107,7 @@
 }
 
 .page__title {
-  font-family: "Shrikhand", cursive;
+  font-family: "Shrikhand", sans-serif;
   font-size: 28px;
   margin-left: 12px;
   font-style: normal;
@@ -128,7 +130,7 @@
 .menu-contenu {
   background-color: white;
   padding: 15px;
-  border-radius: 1.3rem;
+  border-radius: 0.75rem;
   margin: 10px;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   cursor: pointer;
@@ -147,7 +149,7 @@
   font-family: "roboto", sans-serif;
   font-size: 18px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: normal;
   display: contents;
 }
@@ -174,7 +176,6 @@
 .menu__prix {
   display: flex;
   justify-content: space-between;
-  margin-top: 5px;
 }
 
 .footer {
@@ -183,7 +184,7 @@
 
 .footer-logo {
   color: #fff;
-  font-family: "Shrikhand", cursive;
+  font-family: "Shrikhand", sans-serif;
   font-size: 22px;
   font-weight: 900;
   font-style: italic;
@@ -231,6 +232,7 @@ body {
 
 @media (min-width: 1024px) {
   body {
+    max-width: 1440px;
     margin: 0 auto;
   }
   .header {
@@ -238,39 +240,23 @@ body {
     margin: auto;
   }
   .header-logo img {
+    display: flex;
+    max-width: 200px;
     height: 34px;
+    margin-left: 50px;
+    align-items: center;
+    padding: 0px 19px 0px 16px;
   }
   .restaurant-img {
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    height: 350px;
-  }
-  .restaurants-title {
-    gap: 2vw;
+    width: 1440px;
+    height: 375px;
   }
   .container {
-    width: 1055px;
+    width: 80%;
     margin-left: 140px;
   }
-  .menu-contenu {
-    background-color: white;
-    padding: 15px;
-    border-radius: 1.3rem;
-    margin: 10px;
-    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    height: 45px;
-    margin-bottom: 12px;
-    width: 110%;
-  }
-  .menu__entete {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
-  }
   .page__title {
-    font-family: "Shrikhand", cursive;
+    font-family: "Shrikhand", sans-serif;
     text-align: center;
     font-size: 28px;
     margin-left: auto;
@@ -278,97 +264,40 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .heart-empty img {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    margin-top: 32px;
   }
   .submenus {
     width: 60%;
-    margin: 0 auto;
-    padding-right: 118px;
-  }
-  .entrees__title {
-    border-bottom: 5px solid #99e2d0;
-    width: 10%;
-    padding-bottom: 12px;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-    font-family: "roboto", sans-serif;
-    font-weight: 300;
-    margin-left: 10px;
-    margin-top: 25px;
-  }
-  .menu__title {
-    overflow: hidden;
-    color: #000;
-    text-overflow: ellipsis;
-    font-family: "roboto", sans-serif, cursive;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    display: contents;
-  }
-  .menu__description {
-    overflow: hidden;
-    color: #000;
-    text-overflow: ellipsis;
-    font-family: "roboto", sans-serif;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    display: contents;
-  }
-  .menu__prix {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5px;
+    padding-left: 177px;
   }
   .footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     height: 114px;
+    padding-top: 30px;
+    position: relative;
+    width: 100%;
   }
   .footer-logo {
     color: #fff;
-    font-family: "Shrikhand", cursive;
+    font-family: "Shrikhand", sans-serif;
     font-size: 18px;
     font-weight: 400;
     font-style: normal;
+    line-height: normal;
+    margin-right: 25px;
     width: 139px;
-    margin-left: auto;
-    display: flex;
-    order: 2;
-    font-size: 1.5em;
-    margin-right: 50px;
-  }
-  .footer-list {
-    list-style: none;
-    flex-direction: row;
-    margin: 0;
-    display: flex;
-    justify-content: flex-end;
-    width: 80%;
-    gap: 10px;
+    height: 27px;
+    position: absolute; /* Position absolue pour le logo */
+    bottom: 0; /* En bas */
+    right: 0; /* À droite */
   }
   .footer-list-content {
-    font-family: "roboto", sans-serif;
     margin: 0;
+    display: inline-block;
     color: #fff;
-    font-size: 16px;
+    font-family: "Shrikhand", sans-serif;
+    font-size: 18px;
     font-weight: 400;
     font-style: normal;
-    line-height: 26px;
+    line-height: normal;
   }
-}
-.mentions-legales {
-  margin-left: 20px;
 }/*# sourceMappingURL=pagesmenu.css.map */

@@ -1,122 +1,106 @@
-//IMPORTATION VARIABLES
-@import '_variables';
-
-.header {
-  &--menupage {
-    position: relative;
-  }
-  &--previous {
-    position: absolute;
-    margin-left: 17px;
-    height: 0;
-    width: 2rem;
-    top: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 1.2rem;
-    color: black;
-  }
+.header--menupage {
+  position: relative;
 }
 
-//LOGO HEADER
+.header--previous {
+  position: absolute;
+  margin-left: 17px;
+  height: 0;
+  width: 2rem;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: black;
+}
+
 .header-logo {
   display: flex;
   justify-content: center;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   padding: 14px 89px 13px 17px;
-
   height: 36px;
-
-  img {
-    display: flex;
-    max-width: 375px;
-    margin-left: 50px;
-    align-items: center;
-    padding: 0px 19px 0px 16px;
-  }
 }
 
-//IMAGE RESTAURANT
+.header-logo img {
+  display: flex;
+  max-width: 375px;
+  margin-left: 50px;
+  align-items: center;
+  padding: 0px 19px 0px 16px;
+}
+
 .restaurant-img {
   width: 100%;
   height: 275px;
 }
-// CONTAINER
+
 .container {
   margin-top: -4rem;
   border-radius: 2rem 2rem 0 0;
-  background-color: $color-background;
+  background-color: #f6f6f6;
   z-index: 1;
   position: relative;
+}
 
-  &__page {
-    padding: 1rem 2rem 0 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+.container__page {
+  padding: 1rem 2rem 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-  &__title {
-    font-family: $font-family-second;
-  }
+.container__title {
+  font-family: "Shrikhand", sans-serif;
+}
 
-  &__btn {
-    height: 2rem;
-    width: 2rem;
-    background-color: transparent;
-    border: transparent 0px solid;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    position: relative;
-    background-color: black;
+.container__btn {
+  height: 2rem;
+  width: 2rem;
+  background-color: transparent;
+  border: transparent 0px solid;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  background-color: black;
+}
 
-    &:hover::before {
-      opacity: 1;
-    }
+.container__btn:hover::before {
+  opacity: 1;
+}
 
-    &::before {
-      opacity: 0;
-      transition: 0.5s;
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background: linear-gradient(
-        0deg,
-        $primary-color 0%,
-        $secondary-color 100%
-      );
-    }
-  }
+.container__btn::before {
+  opacity: 0;
+  transition: 0.5s;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+}
 
-  &__like {
-    transition-duration: 0.25s;
-    background-color: $color-background;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    mix-blend-mode: lighten;
-  }
+.container__like {
+  transition-duration: 0.25s;
+  background-color: #f6f6f6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: lighten;
+}
 
-  &__btn:hover {
-    .menu__like {
-      &--noBg {
-        opacity: 0;
-      }
-    }
-  }
+.container__btn:hover .menu__like--noBg {
+  opacity: 0;
 }
 
 .menu__entete {
@@ -126,13 +110,12 @@
 
 .menu__btn {
   margin-right: 41px;
-
   border: none;
   background-color: inherit;
 }
 
 .page__title {
-  font-family: $font-family-second;
+  font-family: "Shrikhand", sans-serif;
   font-size: 28px;
   margin-left: 12px;
   font-style: normal;
@@ -142,7 +125,7 @@
 }
 
 .entrees__title {
-  border-bottom: 5px solid $third-color;
+  border-bottom: 5px solid #99e2d0;
   width: 10%;
   padding-bottom: 12px;
   text-transform: uppercase;
@@ -166,12 +149,12 @@
 .menu__prix p {
   margin: 0;
 }
+
 .menu__title {
   overflow: hidden;
-  color: $color-black;
+  color: #000;
   text-overflow: ellipsis;
-
-  font-family: $font-family-first;
+  font-family: "roboto", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -184,21 +167,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  button {
-    width: 186px;
-    height: 50px;
-    border: 0;
-    background-image: linear-gradient(
-      (193deg, #9356dc -11.44%, #ff79da 123.93%)
-    );
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
 
-    border-radius: 100px;
-    color: $color-white;
-    font-size: 1.1rem;
-    font-weight: 500;
-    cursor: pointer;
-  }
+.footer-btn button {
+  width: 186px;
+  height: 50px;
+  border: 0;
+  background-image: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 .menu__prix {
@@ -207,12 +188,12 @@
 }
 
 .footer {
-  background-color: $color-dark;
+  background-color: #353535;
 }
 
 .footer-logo {
-  color: $color-white;
-  font-family: $font-family-second;
+  color: #fff;
+  font-family: "Shrikhand", sans-serif;
   font-size: 22px;
   font-weight: 900;
   font-style: italic;
@@ -235,12 +216,12 @@
 .footer-icon {
   width: 1.2rem;
   margin-right: 0.5rem;
-  color: $color-white;
+  color: #fff;
 }
 
 .footer-link {
   text-decoration: none;
-  color: $color-white;
+  color: #fff;
   margin-left: 10px;
 }
 
@@ -249,6 +230,7 @@
   flex-direction: column;
   padding: 1rem;
 }
+
 /* RESPONSIVE DESKTOP MEDIA QUERIES*/
 html,
 body {
@@ -256,12 +238,12 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
 @media (min-width: 1024px) {
   body {
     max-width: 1440px;
     margin: 0 auto;
   }
-
   .header {
     display: block;
     margin: auto;
@@ -269,7 +251,6 @@ body {
   .header-logo img {
     height: 34px;
   }
-  //IMAGE RESTAURANT
   .restaurant-img {
     height: 383px;
   }
@@ -279,7 +260,7 @@ body {
     margin: 0 auto;
   }
   .page__title {
-    font-family: $font-family-second;
+    font-family: "Shrikhand", sans-serif;
     text-align: center;
     font-size: 28px;
     margin-left: auto;
@@ -321,10 +302,9 @@ body {
     align-items: center;
     height: 114px;
   }
-
   .footer-logo {
     color: #fff;
-    font-family: $font-family-second;
+    font-family: "Shrikhand", sans-serif;
     font-size: 18px;
     font-weight: 400;
     font-style: normal;
@@ -345,7 +325,7 @@ body {
     gap: 10px;
   }
   .footer-list-content {
-    font-family: $font-family-first;
+    font-family: "roboto", sans-serif;
     margin: 0;
     color: #fff;
     font-size: 16px;

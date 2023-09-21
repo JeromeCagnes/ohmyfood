@@ -1,9 +1,7 @@
-@import '_variables';
-
 body,
 html {
   margin: 0 auto;
-  font-family: $font-family-first;
+  font-family: "roboto", sans-serif;
   scroll-behavior: smooth;
   display: block;
 }
@@ -12,8 +10,9 @@ html {
   position: relative;
   z-index: 2;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-  background-color: $color-white;
+  background-color: #fff;
 }
+
 .header-logo {
   display: block;
   margin: 0 auto;
@@ -33,29 +32,33 @@ main {
   justify-content: center;
   align-items: center;
   padding: 1.25rem 1rem;
-  background-color: $fourth-color;
+  background-color: #eaeaea;
   z-index: 5;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   position: relative;
   padding-bottom: 20px;
   padding-left: 99px;
 }
+
 #localisation {
-  background-color: $fourth-color;
+  background-color: #eaeaea;
   border: none;
   outline: none;
   font-size: 20px;
   font-weight: 800;
 }
+
 section {
   display: block;
 }
+
 .local-icon {
   margin-right: 1rem;
   width: 12px;
   height: 21px;
   font-size: 16px;
 }
+
 .fa,
 .fas {
   font-weight: 900;
@@ -66,13 +69,13 @@ section {
 .fas {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-
   font-family: 'Font Awesome 5 Free';
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
   line-height: 1;
 }
+
 i {
   font-style: italic;
 }
@@ -80,20 +83,23 @@ i {
 .local-icon {
   margin-right: 1rem;
 }
+
 .local-text {
   font-weight: 500;
-  font-family: $font-family-first;
+  font-family: "roboto", sans-serif;
   font-size: 16px;
 }
+
 .hero-title {
   margin: 0;
-  font-family: $font-family-first;
+  font-family: "roboto", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  color: $color-black;
+  color: #000;
 }
+
 h2 {
   display: block;
   font-size: 1.5em;
@@ -103,6 +109,7 @@ h2 {
   margin-inline-end: 0px;
   font-weight: bold;
 }
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -110,16 +117,18 @@ h2 {
   align-items: center;
   padding: 2rem;
   text-align: center;
-  background-color: $color-background;
+  background-color: #f6f6f6;
   height: 249px;
 }
+
 .hero-title-desktop {
   display: none;
 }
+
 .hero-subtitle {
   font-weight: 300;
   width: 315px;
-  font-family: $font-family-first;
+  font-family: "roboto", sans-serif;
   margin-bottom: 50px;
 }
 
@@ -136,25 +145,20 @@ p {
   padding: 0.75rem 1.5rem;
   font-weight: 500;
   font-size: 16px;
-
   border-radius: 100px;
-  color: $color-white;
-  background-color: $color-dark-grey;
-  background-image: linear-gradient(
-    0deg,
-    rgba(147, 86, 220, 0.9),
-    rgba(255, 121, 218, 0.9)
-  );
+  color: #fff;
+  background-color: #686868;
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   cursor: pointer;
   transition-duration: 0.25s;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
 }
+
 .tuto-step {
   padding: 1.5rem;
-
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   border-radius: 1.25rem;
-  background-color: $color-background;
+  background-color: #f6f6f6;
   display: flex;
   position: relative;
   margin-left: 32px;
@@ -162,21 +166,24 @@ p {
   margin-bottom: 40px;
   align-items: center;
 }
+
 .tuto {
   padding: 2rem 1rem;
   margin-bottom: 10%;
   height: 330px;
 }
+
 .tuto-title {
   margin-left: 20px;
   margin-bottom: 26px;
-  font-family: $font-family-first;
+  font-family: "roboto", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   width: 275px;
 }
+
 .tuto-steps {
   margin: 0;
   margin-left: 10px;
@@ -185,6 +192,7 @@ p {
   list-style: none;
   counter-reset: compteListe;
 }
+
 ol {
   display: block;
   list-style-type: decimal;
@@ -194,43 +202,51 @@ ol {
   margin-inline-end: 0px;
   padding-inline-start: 40px;
 }
+
 .tuto-step:first-child {
   margin-top: 0;
 }
+
 li {
   display: list-item;
   text-align: -webkit-match-parent;
 }
+
 .tuto-step:before {
   counter-increment: compteListe 1;
-  content: counter(compteListe) ' ';
-  background: $primary-color;
+  content: counter(compteListe) " ";
+  background: #9356dc;
   height: 1.5rem;
   width: 1.5rem;
   border-radius: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: $color-white;
+  color: #fff;
   position: absolute;
   left: -0.75rem;
 }
+
 .tuto-icon {
   margin-right: 23px;
   margin-left: 34px;
-  color: $color-grey;
+  color: #7e7e7e;
 }
+
 .tuto-icon.last {
-  color: $primary-color;
+  color: #9356dc;
 }
+
 .tuto-step:last-child {
   margin-bottom: 0;
 }
+
 .fa-store {
   content: '\f54e';
 }
+
 .restaurants {
-  background-color: $color-background;
+  background-color: #f6f6f6;
   padding: 2rem 1rem;
 }
 
@@ -243,7 +259,7 @@ li {
 }
 
 .card {
-  background-color: $color-white;
+  background-color: #fff;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   position: relative;
@@ -260,14 +276,16 @@ li {
   box-shadow: none;
   object-fit: cover;
 }
+
 img {
   overflow-clip-margin: content-box;
   overflow: clip;
 }
+
 .card-sticker {
-  background-color: $third-color;
-  color: $color-dark-green;
-  font-family: $font-family-first;
+  background-color: #99e2d0;
+  color: #008766;
+  font-family: "roboto", sans-serif;
   font-size: 14px;
   padding: 0.5rem;
   border-radius: 0.125rem;
@@ -279,21 +297,24 @@ img {
 .card-content {
   height: 71px;
 }
+
 .card-title {
   margin: 22px 10px 0.25rem;
-  font-family: $font-family-first;
+  font-family: "roboto", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
+
 .card-subtitle-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .text {
-  font-family: $font-family-first;
+  font-family: "roboto", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -309,14 +330,16 @@ h3 {
   margin-inline-end: 0px;
   font-weight: bold;
 }
+
 .card-subtitle {
   margin: 0 10px 0.25rem;
-  font-family: $font-family-first;
+  font-family: "roboto", sans-serif;
   font-size: 17px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
 }
+
 .menu-btn {
   height: 2rem;
   width: 2rem;
@@ -328,12 +351,14 @@ h3 {
   justify-content: center;
   cursor: pointer;
   position: relative;
-  background-color: $color-black;
+  background-color: #000;
 }
+
 .like {
   margin-top: -37px;
   margin-right: 10px;
 }
+
 .fa-heart {
   height: 21px;
   margin-right: 21px;
@@ -343,13 +368,14 @@ h3 {
   padding: 0;
   display: flex;
   justify-content: right;
-
-  &:hover {
-    opacity: 1;
-  }
 }
+
+.fa-heart:hover {
+  opacity: 1;
+}
+
 .special-heart {
-  background: $color-button-gradiant;
+  background: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
   height: 21px;
   margin-right: 21px;
   margin-bottom: 33px;
@@ -363,42 +389,47 @@ h3 {
 .far {
   font-weight: 400;
 }
+
 .fa-2x {
   font-size: 2em;
   margin-right: 10px;
 }
 
 .footer {
-  background-color: $color-dark;
+  background-color: #353535;
 }
 
 .footer-logo {
-  color: $color-white;
-  font-family: $font-family-second;
+  color: #fff;
+  font-family: "Shrikhand", sans-serif;
   font-size: 22px;
   font-weight: 900;
   font-style: italic;
   margin-left: 10px;
 }
+
 .footer-list {
   list-style: none;
   padding: 0;
 }
+
 .footer-list-content:first-child {
   margin-top: 0;
 }
+
 .footer-list-content {
   margin: 0.5rem 0;
 }
+
 .footer-icon {
   width: 1.2rem;
   margin-right: 0.5rem;
-  color: $color-white;
+  color: #fff;
 }
 
 .footer-link {
   text-decoration: none;
-  color: $color-white;
+  color: #fff;
   margin-left: 10px;
 }
 
@@ -407,6 +438,7 @@ h3 {
   flex-direction: column;
   padding: 1rem;
 }
+
 /* RESPONSIVE DESKTOP MEDIA QUERIES*/
 html,
 body {
@@ -414,6 +446,7 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
 @media (min-width: 1024px) {
   body {
     max-width: 1440px;
@@ -422,11 +455,10 @@ body {
   .hero-title {
     display: none;
   }
-
   .hero-title-desktop {
     display: inline;
     text-align: center;
-    font-family: $font-family-first;
+    font-family: "roboto", sans-serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -443,7 +475,7 @@ body {
     height: 46px;
     margin-top: 35px;
     font-style: normal;
-    font-family: $font-family-first;
+    font-family: "roboto", sans-serif;
     line-height: normal;
     margin-bottom: 18px;
   }
@@ -464,18 +496,16 @@ body {
     margin-top: 41px;
     margin-bottom: 2px;
   }
-
   .tuto-steps {
     display: flex;
     align-items: flex-start;
-
     margin-top: 25px;
   }
   .tuto-step {
     padding: 1.5rem;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
     border-radius: 1.25rem;
-    background-color: $color-background;
+    background-color: #f6f6f6;
     display: flex;
     position: relative;
     height: 15px;
@@ -489,10 +519,10 @@ body {
   .tuto-icon {
     margin-right: 23px;
     margin-left: 12px;
-    color: $color-grey;
+    color: #7e7e7e;
   }
   .restaurants {
-    background-color: $color-background;
+    background-color: #f6f6f6;
   }
   .restaurants-title {
     width: 80%;
@@ -518,7 +548,7 @@ body {
     object-fit: cover;
   }
   .card-title {
-    font-family: $font-family-first;
+    font-family: "roboto", sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -527,7 +557,7 @@ body {
     margin-left: 18px;
   }
   .card-subtitle {
-    font-family: $font-family-first;
+    font-family: "roboto", sans-serif;
     font-size: 17px;
     font-style: normal;
     font-weight: 300;
@@ -552,10 +582,9 @@ body {
     align-items: center;
     height: 114px;
   }
-
   .footer-logo {
     color: #fff;
-    font-family: $font-family-second;
+    font-family: "Shrikhand", sans-serif;
     font-size: 18px;
     font-weight: 400;
     font-style: normal;
@@ -576,7 +605,7 @@ body {
     gap: 10px;
   }
   .footer-list-content {
-    font-family: $font-family-first;
+    font-family: "roboto", sans-serif;
     margin: 0;
     color: #fff;
     font-size: 16px;

@@ -5,6 +5,7 @@
   &--menupage {
     position: relative;
   }
+
   &--previous {
     position: absolute;
     margin-left: 17px;
@@ -42,7 +43,9 @@
 .restaurant-img {
   width: 100%;
   height: 275px;
+  object-fit: cover;
 }
+
 // CONTAINER
 .container {
   margin-top: -4rem;
@@ -88,11 +91,9 @@
       left: 0;
       height: 100%;
       width: 100%;
-      background: linear-gradient(
-        0deg,
-        $primary-color 0%,
-        $secondary-color 100%
-      );
+      background: linear-gradient(0deg,
+          $primary-color 0%,
+          $secondary-color 100%);
     }
   }
 
@@ -166,6 +167,7 @@
 .menu__prix p {
   margin: 0;
 }
+
 .menu__title {
   overflow: hidden;
   color: $color-black;
@@ -184,13 +186,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   button {
     width: 186px;
     height: 50px;
     border: 0;
-    background-image: linear-gradient(
-      (193deg, #9356dc -11.44%, #ff79da 123.93%)
-    );
+    background-image: linear-gradient((193deg, #9356dc -11.44%, #ff79da 123.93%));
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 
     border-radius: 100px;
@@ -249,6 +250,7 @@
   flex-direction: column;
   padding: 1rem;
 }
+
 /* RESPONSIVE DESKTOP MEDIA QUERIES*/
 html,
 body {
@@ -256,6 +258,7 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
 @media (min-width: 1024px) {
   body {
     max-width: 1440px;
@@ -266,18 +269,22 @@ body {
     display: block;
     margin: auto;
   }
+
   .header-logo img {
     height: 34px;
   }
+
   //IMAGE RESTAURANT
   .restaurant-img {
     height: 383px;
   }
+
   .container {
     width: 1055px;
     margin-left: 140px;
     margin: 0 auto;
   }
+
   .page__title {
     font-family: $font-family-second;
     text-align: center;
@@ -292,13 +299,16 @@ body {
     flex-direction: row;
     justify-content: center;
   }
+
   .fa-heart {
     font-size: 2em;
   }
+
   .submenus {
     width: 60%;
     margin: 0 auto;
   }
+
   .menu__title {
     overflow: hidden;
     color: #000;
@@ -310,11 +320,13 @@ body {
     line-height: normal;
     display: contents;
   }
+
   .menu__prix {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
   }
+
   .footer {
     display: flex;
     flex-direction: row;
@@ -335,6 +347,7 @@ body {
     font-size: 1.5em;
     margin-right: 50px;
   }
+
   .footer-list {
     list-style: none;
     flex-direction: row;
@@ -344,6 +357,7 @@ body {
     width: 80%;
     gap: 10px;
   }
+
   .footer-list-content {
     font-family: $font-family-first;
     margin: 0;

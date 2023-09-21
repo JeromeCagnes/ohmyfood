@@ -14,6 +14,7 @@ html {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   background-color: $color-white;
 }
+
 .header-logo {
   display: block;
   margin: 0 auto;
@@ -40,6 +41,7 @@ main {
   padding-bottom: 20px;
   padding-left: 99px;
 }
+
 #localisation {
   background-color: $fourth-color;
   border: none;
@@ -47,15 +49,18 @@ main {
   font-size: 20px;
   font-weight: 800;
 }
+
 section {
   display: block;
 }
+
 .local-icon {
   margin-right: 1rem;
   width: 12px;
   height: 21px;
   font-size: 16px;
 }
+
 .fa,
 .fas {
   font-weight: 900;
@@ -73,6 +78,7 @@ section {
   text-rendering: auto;
   line-height: 1;
 }
+
 i {
   font-style: italic;
 }
@@ -80,11 +86,13 @@ i {
 .local-icon {
   margin-right: 1rem;
 }
+
 .local-text {
   font-weight: 500;
   font-family: $font-family-first;
   font-size: 16px;
 }
+
 .hero-title {
   margin: 0;
   font-family: $font-family-first;
@@ -94,6 +102,7 @@ i {
   line-height: normal;
   color: $color-black;
 }
+
 h2 {
   display: block;
   font-size: 1.5em;
@@ -103,6 +112,7 @@ h2 {
   margin-inline-end: 0px;
   font-weight: bold;
 }
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -113,9 +123,11 @@ h2 {
   background-color: $color-background;
   height: 249px;
 }
+
 .hero-title-desktop {
   display: none;
 }
+
 .hero-subtitle {
   font-weight: 300;
   width: 315px;
@@ -140,15 +152,14 @@ p {
   border-radius: 100px;
   color: $color-white;
   background-color: $color-dark-grey;
-  background-image: linear-gradient(
-    0deg,
-    rgba(147, 86, 220, 0.9),
-    rgba(255, 121, 218, 0.9)
-  );
+  background-image: linear-gradient(0deg,
+      rgba(147, 86, 220, 0.9),
+      rgba(255, 121, 218, 0.9));
   cursor: pointer;
   transition-duration: 0.25s;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
 }
+
 .tuto-step {
   padding: 1.5rem;
 
@@ -162,11 +173,13 @@ p {
   margin-bottom: 40px;
   align-items: center;
 }
+
 .tuto {
   padding: 2rem 1rem;
   margin-bottom: 10%;
   height: 330px;
 }
+
 .tuto-title {
   margin-left: 20px;
   margin-bottom: 26px;
@@ -177,6 +190,7 @@ p {
   line-height: normal;
   width: 275px;
 }
+
 .tuto-steps {
   margin: 0;
   margin-left: 10px;
@@ -185,6 +199,7 @@ p {
   list-style: none;
   counter-reset: compteListe;
 }
+
 ol {
   display: block;
   list-style-type: decimal;
@@ -194,13 +209,16 @@ ol {
   margin-inline-end: 0px;
   padding-inline-start: 40px;
 }
+
 .tuto-step:first-child {
   margin-top: 0;
 }
+
 li {
   display: list-item;
   text-align: -webkit-match-parent;
 }
+
 .tuto-step:before {
   counter-increment: compteListe 1;
   content: counter(compteListe) ' ';
@@ -215,20 +233,25 @@ li {
   position: absolute;
   left: -0.75rem;
 }
+
 .tuto-icon {
   margin-right: 23px;
   margin-left: 34px;
   color: $color-grey;
 }
+
 .tuto-icon.last {
   color: $primary-color;
 }
+
 .tuto-step:last-child {
   margin-bottom: 0;
 }
+
 .fa-store {
   content: '\f54e';
 }
+
 .restaurants {
   background-color: $color-background;
   padding: 2rem 1rem;
@@ -260,10 +283,12 @@ li {
   box-shadow: none;
   object-fit: cover;
 }
+
 img {
   overflow-clip-margin: content-box;
   overflow: clip;
 }
+
 .card-sticker {
   background-color: $third-color;
   color: $color-dark-green;
@@ -279,6 +304,7 @@ img {
 .card-content {
   height: 71px;
 }
+
 .card-title {
   margin: 22px 10px 0.25rem;
   font-family: $font-family-first;
@@ -287,11 +313,13 @@ img {
   font-weight: 700;
   line-height: normal;
 }
+
 .card-subtitle-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .text {
   font-family: $font-family-first;
   font-size: 16px;
@@ -309,6 +337,7 @@ h3 {
   margin-inline-end: 0px;
   font-weight: bold;
 }
+
 .card-subtitle {
   margin: 0 10px 0.25rem;
   font-family: $font-family-first;
@@ -317,6 +346,7 @@ h3 {
   font-weight: 300;
   line-height: normal;
 }
+
 .menu-btn {
   height: 2rem;
   width: 2rem;
@@ -330,10 +360,12 @@ h3 {
   position: relative;
   background-color: $color-black;
 }
+
 .like {
   margin-top: -37px;
   margin-right: 10px;
 }
+
 .fa-heart {
   height: 21px;
   margin-right: 21px;
@@ -348,6 +380,7 @@ h3 {
     opacity: 1;
   }
 }
+
 .special-heart {
   background: $color-button-gradiant;
   height: 21px;
@@ -363,6 +396,7 @@ h3 {
 .far {
   font-weight: 400;
 }
+
 .fa-2x {
   font-size: 2em;
   margin-right: 10px;
@@ -380,16 +414,20 @@ h3 {
   font-style: italic;
   margin-left: 10px;
 }
+
 .footer-list {
   list-style: none;
   padding: 0;
 }
+
 .footer-list-content:first-child {
   margin-top: 0;
 }
+
 .footer-list-content {
   margin: 0.5rem 0;
 }
+
 .footer-icon {
   width: 1.2rem;
   margin-right: 0.5rem;
@@ -407,6 +445,7 @@ h3 {
   flex-direction: column;
   padding: 1rem;
 }
+
 /* RESPONSIVE DESKTOP MEDIA QUERIES*/
 html,
 body {
@@ -414,11 +453,13 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
 @media (min-width: 1024px) {
   body {
     max-width: 1440px;
     margin: 0 auto;
   }
+
   .hero-title {
     display: none;
   }
@@ -433,10 +474,12 @@ body {
     line-height: normal;
     margin: 0 auto;
   }
+
   .hero {
     height: 179px;
     padding: 30px;
   }
+
   .hero-subtitle {
     font-weight: 300;
     width: 531px;
@@ -447,11 +490,13 @@ body {
     line-height: normal;
     margin-bottom: 18px;
   }
+
   .hero-btn {
     margin-right: 20px;
     margin-left: -10px;
     width: 218px;
   }
+
   .tuto {
     display: flex;
     flex-direction: column;
@@ -460,6 +505,7 @@ body {
     height: 72px;
     padding-left: 120px;
   }
+
   .tuto-title {
     margin-top: 41px;
     margin-bottom: 2px;
@@ -471,6 +517,7 @@ body {
 
     margin-top: 25px;
   }
+
   .tuto-step {
     padding: 1.5rem;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
@@ -486,29 +533,35 @@ body {
     padding-left: 38px;
     align-items: center;
   }
+
   .tuto-icon {
     margin-right: 23px;
     margin-left: 12px;
     color: $color-grey;
   }
+
   .restaurants {
     background-color: $color-background;
   }
+
   .restaurants-title {
     width: 80%;
     padding-left: 100px;
   }
+
   .cards {
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 30px;
     width: 65%;
     gap: 60px;
   }
+
   .card-content {
     height: 77px;
     width: 384px;
     display: contents;
   }
+
   .card-img {
     height: 231px;
     width: 498px;
@@ -517,6 +570,7 @@ body {
     box-shadow: none;
     object-fit: cover;
   }
+
   .card-title {
     font-family: $font-family-first;
     font-size: 18px;
@@ -526,6 +580,7 @@ body {
     margin-bottom: 5px;
     margin-left: 18px;
   }
+
   .card-subtitle {
     font-family: $font-family-first;
     font-size: 17px;
@@ -536,16 +591,19 @@ body {
     margin-left: 18px;
     height: 24px;
   }
+
   .fa-2x {
     margin-bottom: 5px;
     margin-top: 18px;
   }
+
   .heart-colored {
     margin-bottom: 5px;
     margin-top: 18px;
     color: #ff79da;
     font-size: 2em;
   }
+
   .footer {
     display: flex;
     flex-direction: row;
@@ -566,6 +624,7 @@ body {
     font-size: 1.5em;
     margin-right: 50px;
   }
+
   .footer-list {
     list-style: none;
     flex-direction: row;
@@ -575,6 +634,7 @@ body {
     width: 80%;
     gap: 10px;
   }
+
   .footer-list-content {
     font-family: $font-family-first;
     margin: 0;

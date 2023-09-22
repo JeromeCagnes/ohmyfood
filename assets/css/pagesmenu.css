@@ -266,22 +266,24 @@ body {
   }
   .container .menu__entete {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
     margin-bottom: 40px;
   }
   .container .page__title {
     font-family: "Shrikhand", sans-serif;
-    text-align: center;
     font-size: 28px;
-    margin-left: auto;
-    margin-right: auto;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     margin-top: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    height: auto;
+    margin-left: 75px;
+  }
+  .container .menu__btn {
+    margin-top: 25px;
+    height: auto;
   }
   .container .heart-empty img {
     display: flex;

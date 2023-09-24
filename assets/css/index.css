@@ -362,20 +362,17 @@ h3 {
 .fa-heart {
   height: 21px;
   margin-right: 21px;
-  margin-bottom: 33px;
+  margin-bottom: 15px;
+  margin-top: 20px;
   background-color: initial;
   border: 0 solid transparent;
   padding: 0;
   display: flex;
   justify-content: right;
+  font-size: 26px;
 }
 .fa-heart:hover {
   opacity: 1;
-}
-
-.heart-colored {
-  color: #ff79da;
-  font-size: 2em;
 }
 
 .far {
@@ -473,10 +470,10 @@ body {
     font-weight: 600;
     line-height: normal;
     margin: 0 auto;
-    margin-top: 4%;
+    margin-top: 5%;
   }
   .hero {
-    height: 35%;
+    height: 60%;
   }
   .hero-subtitle {
     font-weight: 300;
@@ -573,12 +570,6 @@ body {
   .fa-2x {
     margin-bottom: 5px;
     margin-top: 18px;
-  }
-  .heart-colored {
-    margin-bottom: 5px;
-    margin-top: 18px;
-    color: #ff79da;
-    font-size: 2em;
   }
   .footer {
     display: flex;

@@ -13,11 +13,9 @@ $color-grey: #7e7e7e;
 $color-dark: #353535;
 $color-dark-green: #008766;
 //GRADIANTS
-$color-button-gradiant: linear-gradient(
-  193deg,
-  #9356dc -11.44%,
-  #ff79da 123.93%
-);
+$color-button-gradiant: linear-gradient(193deg,
+    #9356dc -11.44%,
+    #ff79da 123.93%);
 //SHADOWS
 $box-shadow-light: 0 0 0.5rem rgba(0, 0, 0, 0.25);
 $box-shadow-medium: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);

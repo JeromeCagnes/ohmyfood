@@ -54,6 +54,17 @@
   z-index: 1;
   position: relative;
 
+  .fa-heart {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+  }
+
+
   &__page {
     padding: 1rem 2rem 0 1rem;
     display: flex;
@@ -65,78 +76,45 @@
     font-family: $font-family-second;
   }
 
-  &__btn {
-    height: 2rem;
-    width: 2rem;
-    background-color: transparent;
-    border: transparent 0px solid;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    position: relative;
-    background-color: black;
 
-    &:hover::before {
-      opacity: 1;
-    }
-
-    &::before {
-      opacity: 0;
-      transition: 0.5s;
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background: linear-gradient(0deg,
-          $primary-color 0%,
-          $secondary-color 100%);
-    }
-  }
-
-  &__like:hover {
-    background-color: $color-background;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    mix-blend-mode: lighten;
-  }
-
-  &__btn:hover {
-    .menu__like {
-      &--noBg {
-        opacity: 0;
-      }
-    }
-  }
 }
 
 .menu__entete {
   display: flex;
-  justify-content: space-between;
+  gap: 25px;
+  margin-bottom: 40px;
+
 }
 
 .menu__btn {
-  margin-right: 41px;
   border: none;
   background-color: inherit;
+  font-size: 24px;
+  color: white;
+  transition: all 0.6s ease-in-out;
+  -webkit-text-stroke: 1px black;
+  display: inline-block;
+}
+
+
+
+.menu__btn:hover i {
+  background: linear-gradient(to right, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 1px #9356dc;
+  cursor: pointer;
 }
 
 .page__title {
   font-family: $font-family-second;
-  font-size: 28px;
-  margin-left: 12px;
+  font-size: 1.75rem;
   font-style: normal;
   font-weight: 400;
-  margin-top: 32px;
+  padding-top: 20px;
+  margin: 0 auto;
+  display: inline-block;
 }
 
 .entrees__title {
@@ -189,7 +167,6 @@
     border: 0;
     background-image: linear-gradient((193deg, #9356dc -11.44%, #ff79da 123.93%));
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-
     border-radius: 100px;
     color: $color-white;
     font-size: 1.1rem;
@@ -324,30 +301,22 @@ body {
 
     .page__title {
       font-family: $font-family-second;
-      font-size: 28px;
+      font-size: 1.75rem;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
-      margin-top: 50px;
-      height: auto;
-      margin-left: 75px;
+      padding-top: 20px;
+      display: inline-block;
+      margin: 0;
     }
 
     .menu__btn {
       margin-top: 25px;
-      height: auto;
-    }
-
-    .heart-empty img {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
     }
 
     .submenus {
       width: 60%;
       margin: 0 auto;
-
     }
 
     .entrees__title {

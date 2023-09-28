@@ -131,7 +131,6 @@ h2 {
   padding: 2rem;
   text-align: center;
   background-color: #f6f6f6;
-  height: 249px;
 }
 
 .hero-title-desktop {
@@ -316,7 +315,8 @@ img {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  margin-left: 18px;
 }
 
 .card-subtitle-container {
@@ -350,6 +350,7 @@ h3 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-left: 18px;
 }
 
 .menu-btn {
@@ -503,9 +504,6 @@ body {
     margin: 0 auto;
     margin-top: 5%;
   }
-  .hero {
-    height: 60%;
-  }
   .hero-subtitle {
     font-weight: 300;
     width: 100%;
@@ -587,8 +585,8 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-bottom: 5px;
     margin-left: 18px;
+    margin-top: 15px;
   }
   .card-title .like {
     top: -20px;
@@ -621,6 +619,7 @@ body {
     color: white;
     transition: all 0.6s ease-in-out;
     -webkit-text-stroke: 1px black;
+    margin-top: 15px;
   }
   .like:hover i {
     background: linear-gradient(to right, #ff79da, #9356dc);

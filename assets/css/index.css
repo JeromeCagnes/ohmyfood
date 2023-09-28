@@ -167,6 +167,12 @@ p {
   margin-bottom: 45px;
 }
 
+.hero-btn:hover {
+  box-shadow: 0.35rem 0.35rem 15px rgba(0, 0, 0, 0.55);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
 .tuto-step {
   padding: 1.5rem;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
@@ -238,6 +244,10 @@ li {
   margin-right: 23px;
   margin-left: 34px;
   color: #7e7e7e;
+}
+
+.tuto-icon:hover {
+  cursor: pointer;
 }
 
 .tuto-icon.last {
@@ -517,6 +527,12 @@ body {
     margin-right: 20px;
     margin-left: -10px;
   }
+  .hero-btn:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition-duration: 1s;
+    box-shadow: 0.35rem 0.35rem 15px rgba(0, 0, 0, 0.55);
+  }
   .tuto {
     display: flex;
     flex-direction: column;
@@ -550,6 +566,9 @@ body {
     margin-right: 23px;
     margin-left: 12px;
     color: #7e7e7e;
+  }
+  .tuto-icon:hover {
+    cursor: pointer;
   }
   .restaurants {
     background-color: #f6f6f6;

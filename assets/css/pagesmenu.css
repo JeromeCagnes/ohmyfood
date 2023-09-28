@@ -85,6 +85,8 @@
   color: transparent;
   -webkit-text-stroke: 1px #9356dc;
   cursor: pointer;
+  transform: scale(1.5);
+  transition: all 0.6s ease-in-out;
 }
 
 .page__title {

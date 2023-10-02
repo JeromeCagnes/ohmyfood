@@ -691,4 +691,46 @@ body {
 }
 .mentions-legales {
   margin-left: 20px;
+}
+
+animation-waiting {
+  display: flex;
+  justify-content: center;
+  background-color: #eaeaea;
+  animation: breath 10s ease-in-out infinite, fadeOut 1s forwards 3s;
+}
+
+@keyframes breath {
+  50% {
+    background: #f6f6f6;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+#path3346 {
+  stroke: #cccccc;
+  stroke-dasharray: 300px;
+  animation: spin 10s ease-in-out infinite;
+  stroke-dashoffset: 100px;
+}
+
+@keyframes spin {
+  0% {
+    stroke-dashoffset: 100px;
+  }
+  50% {
+    stroke-dashoffset: 500px;
+    stroke-width: 20px;
+  }
+  100% {
+    stroke-dashoffset: 100px;
+    stroke-width: 1px;
+  }
 }/*# sourceMappingURL=index.css.map */

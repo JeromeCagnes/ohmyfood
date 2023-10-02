@@ -686,8 +686,6 @@ body {
     margin-top: 18px;
   }
 
-
-
   .footer {
     display: flex;
     flex-direction: row;
@@ -730,4 +728,88 @@ body {
 
 .mentions-legales {
   margin-left: 20px;
+}
+
+//ANIMATION WAITING
+animation-waiting {
+  display: flex;
+  justify-content: center;
+  background-color: #eaeaea;
+  -webkit-animation: breath 10s ease-in-out infinite, fadeOut 1s forwards 3s;
+  -moz-animation: breath 10s ease-in-out infinite, fadeOut 1s forwards 3s;
+  -o-animation: breath 10s ease-in-out infinite, fadeOut 1s forwards 3s;
+  animation: breath 10s ease-in-out infinite, fadeOut 1s forwards 3s;
+}
+
+@keyframes breath {
+  0% {}
+
+  50% {
+    background: #f6f6f6
+  }
+
+  100% {}
+}
+
+@-webkit-keyframes breath {
+  0% {}
+
+  50% {
+    background: #220000
+  }
+
+  100% {}
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+#path3346 {
+  stroke: #cccccc;
+  stroke-dasharray: 300px;
+  -webkit-animation: spin 10s ease-in-out infinite;
+  -moz-animation: spin 10s ease-in-out infinite;
+  -o-animation: spin 10s ease-in-out infinite;
+  animation: spin 10s ease-in-out infinite;
+  stroke-dashoffset: 100px;
+}
+
+@keyframes spin {
+  0% {
+    stroke-dashoffset: 100px;
+  }
+
+  50% {
+    stroke-dashoffset: 500px;
+    stroke-width: 20px;
+  }
+
+  100% {
+    stroke-dashoffset: 100px;
+    stroke-width: 1px;
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    stroke-dashoffset: 100px;
+  }
+
+  50% {
+    stroke-dashoffset: 500px;
+    stroke-width: 20px;
+  }
+
+  100% {
+    stroke-dashoffset: 100px;
+    stroke-width: 1px;
+  }
 }

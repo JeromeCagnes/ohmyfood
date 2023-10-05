@@ -405,7 +405,7 @@ h3 {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  -webkit-text-stroke: 1px #9356dc;
+  -webkit-text-stroke: 0px #9356dc;
   cursor: pointer;
   transform: scale(1.5);
 }
@@ -671,15 +671,6 @@ body {
     margin-top: 15px;
   }
 
-  .like:hover i {
-    background: linear-gradient(to right, #ff79da, #9356dc);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    -webkit-text-stroke: 1px #9356dc;
-    cursor: pointer;
-    transform: scale(1.5);
-  }
 
   .fa-2x {
     margin-bottom: 5px;
@@ -742,6 +733,11 @@ html {
   height: 100%;
 }
 
+.main-container {
+  opacity: 0;
+  animation: fadeIn 0s cubic-bezier(0.19, 1, 0.22, 1) 3s forwards;
+}
+
 .animation-waiting {
   display: flex;
   justify-content: center;
@@ -753,8 +749,9 @@ html {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
-  animation: fadeOutLoader 8s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  opacity: 1;
+  animation: fadeOutLoader 1s cubic-bezier(0.19, 1, 0.22, 1) 3s forwards;
+
 }
 
 .loader {
@@ -763,7 +760,7 @@ html {
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  animation: spin 8s linear;
+  animation: spin 3s linear;
 }
 
 @keyframes spin {
@@ -783,7 +780,16 @@ html {
 
   to {
     opacity: 0;
-    visibility: hidden;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
 

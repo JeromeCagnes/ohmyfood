@@ -177,6 +177,7 @@
   height: 100%;
   display: flex;
   align-items: center;
+  font-weight: 600;
 }
 
 .prix-check-wrapper > p {
@@ -247,20 +248,8 @@
   animation: rotateCheck 600ms forwards;
 }
 
-.menu-contenu > :nth-of-type(1) {
+.submenus article {
   animation: SlideDown 0.9s ease-in-out;
-}
-
-.menu-contenu > :nth-of-type(2) {
-  animation: SlideDown 1.2s ease-in-out;
-}
-
-.menu-contenu > :nth-of-type(3) {
-  animation: SlideDown 1.5s ease-in-out;
-}
-
-.menu-contenu > :nth-of-type(4) {
-  animation: SlideDown 1.8s ease-in-out;
 }
 
 @keyframes SlideDown {

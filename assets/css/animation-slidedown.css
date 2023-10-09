@@ -1,0 +1,16 @@
+.submenus article {
+  animation: SlideDown 0.9s ease-in-out;
+}
+
+@keyframes SlideDown {
+  from {
+    transform: translateY(70px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=animation-slidedown.css.map */

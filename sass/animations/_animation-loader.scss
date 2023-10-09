@@ -1,0 +1,95 @@
+body,
+html {
+   height: 100%;
+   margin: 0;
+}
+
+.page-content {
+   position: relative;
+   height: 100%;
+}
+
+.main-container {
+   opacity: 0;
+   animation: fadeIn 0s cubic-bezier(0.19, 1, 0.22, 1) 3s forwards;
+}
+
+.animation-waiting {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   width: 100%;
+   background-color: #ADD8E6; // Couleur de fond fixe en bleu clair
+   position: fixed;
+   top: 0;
+   left: 0;
+   opacity: 1;
+   animation: fadeOutLoader 1s cubic-bezier(0.19, 1, 0.22, 1) 3s forwards;
+}
+
+.loader {
+   border: 16px solid #f3f3f3;
+   border-top: 16px solid #3498db;
+   border-radius: 50%;
+   width: 100px;
+   height: 100px;
+   animation: spin 3s linear;
+}
+
+@keyframes spin {
+   0% {
+      transform: rotate(0deg);
+   }
+
+   100% {
+      transform: rotate(360deg);
+   }
+}
+
+@keyframes fadeOutLoader {
+   from {
+      opacity: 1;
+   }
+
+   to {
+      opacity: 0;
+   }
+}
+
+@keyframes fadeIn {
+   from {
+      opacity: 0;
+   }
+
+   to {
+      opacity: 1;
+   }
+}
+
+//TRANSITION LOGO A L OUVERTURE
+@keyframes containerDezoom {
+   from {
+      transform: scale(1.5);
+   }
+
+   to {
+      transform: scale(1);
+   }
+}
+
+.header-logo {
+   animation: containerDezoom 5s forwards;
+   display: flex;
+   justify-content: center;
+   height: 36px;
+   margin-bottom: 10px;
+   transition: all 5s;
+   margin: 0 auto;
+   // Transition progressive pendant 5s 
+   border: none;
+
+   body.animation-active & {
+      transform: scale(1.5);
+   }
+}

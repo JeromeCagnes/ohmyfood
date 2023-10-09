@@ -1,0 +1,10 @@
+.header {
+  display: block;
+  margin: auto;
+
+  &-logo {
+    img {
+      height: 34px;
+    }
+  }
+}

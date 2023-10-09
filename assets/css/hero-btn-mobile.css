@@ -1,0 +1,21 @@
+.hero-btn {
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  font-size: 17px;
+  border-radius: 100px;
+  color: #fff;
+  background-color: #686868;
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  cursor: pointer;
+  transition-duration: 0.25s;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  margin-bottom: 45px;
+}
+.hero-btn:hover {
+  box-shadow: 0.35rem 0.35rem 15px rgba(0, 0, 0, 0.55);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/*# sourceMappingURL=hero-btn-mobile.css.map */

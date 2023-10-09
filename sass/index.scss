@@ -1,5 +1,8 @@
 @import '_variables';
+@import "layout/headermobile";
 
+//ANIMATION LOADER
+@import 'animations/animation-loader';
 
 body,
 html {
@@ -7,21 +10,6 @@ html {
   font-family: $font-family-first;
   scroll-behavior: smooth;
   display: block;
-}
-
-.header {
-  position: relative;
-  z-index: 2;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-  background-color: $color-white;
-
-  &-logo {
-    display: block;
-    margin: 0 auto;
-    height: 36px;
-    padding-top: 14px;
-    padding-bottom: 10px;
-  }
 }
 
 div,
@@ -41,8 +29,8 @@ main {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   position: relative;
   padding-bottom: 20px;
-  padding-left: 99px;
   height: 15px;
+  padding-left: 3rem;
 
   #localisation {
     background-color: $fourth-color;
@@ -152,30 +140,12 @@ h2 {
     font-family: $font-family-first;
     margin-bottom: 50px;
   }
-
-  &-btn {
-    border: 0;
-    padding: 0.75rem 1.5rem;
-    font-weight: 500;
-    font-size: 17px;
-    border-radius: 100px;
-    color: $color-white;
-    background-color: $color-dark-grey;
-    background-image: linear-gradient(0deg,
-        rgba(147, 86, 220, 0.9),
-        rgba(255, 121, 218, 0.9));
-    cursor: pointer;
-    transition-duration: 0.25s;
-    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
-    margin-bottom: 45px;
-
-    &:hover {
-      box-shadow: 0.35rem 0.35rem 15px rgba(0, 0, 0, 0.55);
-      cursor: pointer;
-      transform: scale(1.1);
-    }
-  }
 }
+
+//BOUTON HERO MOBILE
+
+@import 'buttons/hero-btn-mobile';
+
 
 p {
   display: block;
@@ -432,47 +402,9 @@ h3 {
   margin-right: 10px;
 }
 
-.footer {
-  background-color: $color-dark;
-  display: flex;
-  flex-direction: column;
-  padding-left: 10px;
-  padding-top: 30px;
+//SECTION FOOTER MOBILE
 
-  &-logo {
-    color: $color-white;
-    font-family: $font-family-second;
-    font-size: 22px;
-    font-weight: 900;
-    font-style: italic;
-    margin-left: 10px;
-  }
-
-  &-list {
-    list-style: none;
-    padding: 0;
-
-    &-content {
-      margin: 0.5rem 0;
-
-      &:first-child {
-        margin-top: 0;
-      }
-    }
-  }
-
-  &-icon {
-    width: 1.2rem;
-    margin-right: 0.5rem;
-    color: $color-white;
-  }
-
-  &-link {
-    text-decoration: none;
-    color: $color-white;
-    margin-left: 10px;
-  }
-}
+@import 'layout/footermobile';
 
 /* RESPONSIVE DESKTOP MEDIA QUERIES*/
 html,
@@ -487,13 +419,7 @@ body {
     margin: 0 auto;
   }
 
-  .header-logo {
-    display: block;
-    margin: 0 auto;
-    height: 36px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
+  @import "layout/headerdesktop";
 
   //SECTION LOCALISATION DESKTOP
 
@@ -551,19 +477,10 @@ body {
       line-height: normal;
       font-size: 17px;
     }
-
-    .hero-btn {
-      margin-right: 20px;
-      margin-left: -10px;
-
-      &:hover {
-        cursor: pointer;
-        transform: scale(1.2);
-        transition-duration: 1s;
-        box-shadow: 0.35rem 0.35rem 15px rgba(0, 0, 0, 0.55);
-      }
-    }
   }
+
+  // BOUTON RESTAURANT
+  @import 'buttons/hero-btn-desktop';
 
   //SECTION TUTO DESKTOP
 
@@ -698,143 +615,6 @@ body {
     margin-top: 18px;
   }
 
-  .footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 114px;
-  }
-
-  .footer-logo {
-    color: #fff;
-    font-family: $font-family-second;
-    font-weight: 400;
-    font-style: normal;
-    width: 139px;
-    margin-left: auto;
-    display: flex;
-    order: 2;
-    font-size: 1.5em;
-    margin-right: 50px;
-  }
-
-  .footer-list {
-    list-style: none;
-    margin: 0;
-    display: flex;
-    justify-content: flex-end;
-    width: 80%;
-    gap: 10px;
-  }
-
-  .footer-list-content {
-    font-family: $font-family-first;
-    margin: 0;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 26px;
-  }
-}
-
-.mentions-legales {
-  margin-left: 20px;
-}
-
-//ANIMATION WAITING
-body,
-html {
-  height: 100%;
-  margin: 0;
-}
-
-.page-content {
-  position: relative;
-  height: 100%;
-}
-
-.main-container {
-  opacity: 0;
-  animation: fadeIn 0s cubic-bezier(0.19, 1, 0.22, 1) 3s forwards;
-}
-
-.animation-waiting {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  background-color: #ADD8E6; // Couleur de fond fixe en bleu clair
-  position: fixed;
-  top: 0;
-  left: 0;
-  opacity: 1;
-  animation: fadeOutLoader 1s cubic-bezier(0.19, 1, 0.22, 1) 3s forwards;
-}
-
-.loader {
-  border: 16px solid #f3f3f3;
-  border-top: 16px solid #3498db;
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  animation: spin 3s linear;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes fadeOutLoader {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-//TRANSITION LOGO A L OUVERTURE
-@keyframes containerDezoom {
-  from {
-    transform: scale(1.5);
-  }
-
-  to {
-    transform: scale(1);
-  }
-}
-
-.header-logo {
-  animation: containerDezoom 5s forwards;
-  display: flex;
-  justify-content: center;
-  height: 36px;
-  margin-bottom: 10px;
-  transition: all 5s;
-  margin: 0 auto;
-  // Transition progressive pendant 5s 
-  border: none;
-
-  body.animation-active & {
-    transform: scale(1.5);
-  }
+  //SECTION FOOTER DESKTOP
+  @import 'layout/footerdesktop';
 }

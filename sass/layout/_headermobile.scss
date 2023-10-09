@@ -1,0 +1,34 @@
+.header {
+   &--menupage {
+      position: relative;
+   }
+
+   &--previous {
+      position: absolute;
+      margin-left: 17px;
+      height: 0;
+      width: 2rem;
+      top: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      color: black;
+   }
+}
+
+//LOGO HEADER MOBILE
+.header-logo {
+   display: flex;
+   justify-content: center;
+   padding: 14px 89px 13px 17px;
+   padding-left: 3rem;
+
+   img {
+      display: flex;
+      max-width: 375px;
+      margin-left: 50px;
+      align-items: center;
+      padding: 0px 19px 0px 16px;
+   }
+}

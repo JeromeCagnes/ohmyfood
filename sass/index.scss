@@ -181,9 +181,12 @@ p {
     margin-right: 23px;
     margin-left: 34px;
     color: $color-grey;
+    transition: transform 0.3s, box-shadow 0.3s; // Transition douce pour le zoom et l'ombre
 
     &:hover {
       cursor: pointer;
+      transform: scale(1.1); // Augmente la taille de l'icône de 10% lors du survol
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); // Ajoute une ombre lors du survol
     }
 
     &.last {

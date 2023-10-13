@@ -189,9 +189,7 @@ p {
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); // Ajoute une ombre lors du survol
     }
 
-    &.last {
-      color: $primary-color;
-    }
+
   }
 
   &-step {
@@ -526,6 +524,7 @@ body {
 
       &:hover {
         cursor: pointer;
+        color: #9356dc;
       }
     }
   }

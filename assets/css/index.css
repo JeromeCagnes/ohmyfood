@@ -298,6 +298,7 @@ p {
   cursor: pointer;
   transform: scale(1.1);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  color: #9356dc;
 }
 .tuto-step {
   padding: 1.5rem;

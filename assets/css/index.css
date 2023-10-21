@@ -114,6 +114,36 @@ body.animation-active .header-logo {
   transform: scale(1.5);
 }
 
+.hero-btn {
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  font-size: 17px;
+  border-radius: 100px;
+  color: #fff;
+  background-color: #686868;
+  background: linear-gradient(#ff79da, #9356dc);
+  cursor: pointer;
+  transition-duration: 0.45s;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  margin-bottom: 45px;
+  text-decoration: none;
+}
+.hero-btn:hover {
+  background: linear-gradient(#ff8de2, #a67ee5);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  cursor: pointer;
+  transition: background 300ms ease-out, box-shadow 300ms ease-out;
+}
+
+.header {
+  display: block;
+  margin: auto;
+}
+.header-logo img {
+  height: 34px;
+}
+
 body,
 html {
   margin: 0 auto;
@@ -239,27 +269,6 @@ h2 {
   width: 315px;
   font-family: "roboto", sans-serif;
   margin-bottom: 50px;
-}
-
-.hero-btn {
-  border: 0;
-  padding: 0.75rem 1.5rem;
-  font-weight: 500;
-  font-size: 17px;
-  border-radius: 100px;
-  color: #fff;
-  background-color: #686868;
-  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
-  cursor: pointer;
-  transition-duration: 0.25s;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
-  margin-bottom: 45px;
-  text-decoration: none;
-}
-.hero-btn:hover {
-  box-shadow: 0.35rem 0.35rem 15px rgba(0, 0, 0, 0.55);
-  cursor: pointer;
-  transform: scale(1.1);
 }
 
 p {
@@ -542,13 +551,6 @@ body {
   body {
     margin: 0 auto;
   }
-  .header {
-    display: block;
-    margin: auto;
-  }
-  .header-logo img {
-    height: 34px;
-  }
   .local #localisation {
     background-color: #eaeaea;
     border: none;
@@ -594,15 +596,25 @@ body {
     font-size: 17px;
   }
   .hero-btn {
-    margin-right: 20px;
-    margin-left: -10px;
+    border: 0;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    font-size: 17px;
+    border-radius: 100px;
+    color: #fff;
+    background-color: #686868;
+    background: linear-gradient(#ff79da, #9356dc);
+    cursor: pointer;
+    transition-duration: 0.25s;
+    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+    margin-bottom: 45px;
     text-decoration: none;
   }
   .hero-btn:hover {
+    background: linear-gradient(#ff8de2, #a67ee5);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
     cursor: pointer;
-    transform: scale(1.2);
-    transition-duration: 1s;
-    box-shadow: 0.35rem 0.35rem 15px rgba(0, 0, 0, 0.55);
+    transition: background 300ms ease-out, box-shadow 300ms ease-out;
   }
   .tuto {
     display: flex;

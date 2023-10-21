@@ -3,6 +3,12 @@
 
 //ANIMATION LOADER
 @import 'animations/animation-loader';
+//BOUTON HERO MOBILE
+@import 'buttons/hero-btn-mobile';
+//SECTION HEADER DESKTOP
+@import "layout/headerdesktop";
+
+
 
 body,
 html {
@@ -140,12 +146,8 @@ h2 {
     font-family: $font-family-first;
     margin-bottom: 50px;
   }
+
 }
-
-//BOUTON HERO MOBILE
-
-@import 'buttons/hero-btn-mobile';
-
 
 p {
   display: block;
@@ -404,7 +406,6 @@ h3 {
 }
 
 //SECTION FOOTER MOBILE
-
 @import 'layout/footermobile';
 
 /* RESPONSIVE DESKTOP MEDIA QUERIES*/
@@ -419,8 +420,6 @@ body {
   body {
     margin: 0 auto;
   }
-
-  @import "layout/headerdesktop";
 
   //SECTION LOCALISATION DESKTOP
 
@@ -616,6 +615,7 @@ body {
     margin-bottom: 5px;
     margin-top: 18px;
   }
+
 
   //SECTION FOOTER DESKTOP
   @import 'layout/footerdesktop';

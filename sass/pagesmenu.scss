@@ -1,6 +1,17 @@
 //IMPORTATION VARIABLES
-@import '_variables';
+//ANIMATION MENU CHECK
+@import 'animations/animation-check';
+
+//ANIMATION SLIDEDOWN MENU CONTENU
+@import 'animations/animation-slidedown';
+
+
+//SECTION BOUTON FOOTER 
+@import 'buttons/footer-btn-menu';
+@import "layout/headerdesktop";
+
 @import "layout/headermobile";
+@import '_variables';
 
 //IMAGE RESTAURANT MOBILE
 .restaurant-img {
@@ -138,21 +149,7 @@
   font-weight: 600;
 }
 
-//ANIMATION MENU CHECK
-
-@import 'animations/animation-check';
-
-//ANIMATION SLIDEDOWN MENU CONTENU
-
-@import 'animations/animation-slidedown';
-
-
-//SECTION BOUTON FOOTER 
-
-@import 'buttons/footer-btn-menu';
-
 //SECTION FOOTER MOBILE
-
 @import 'layout/footermobile';
 
 //RESPONSIVE DESKTOP MEDIA QUERIES DESKTOP
@@ -182,7 +179,6 @@ body {
     color: black;
   }
 
-  @import "layout/headerdesktop";
 
   //IMAGE RESTAURANT DESKTOP
 

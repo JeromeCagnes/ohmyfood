@@ -95,13 +95,15 @@
 
 .entrees__title {
   border-bottom: 5px solid $third-color;
-  width: 10%;
+  width: 6%;
   padding-bottom: 12px;
   text-transform: uppercase;
   margin-bottom: 5px;
-  font-weight: 500;
+  font-weight: 300;
+  font-size: 16px;
   margin-left: 10px;
   margin-top: 40px;
+  font-family: $font-family-first;
 }
 
 .menu-contenu {

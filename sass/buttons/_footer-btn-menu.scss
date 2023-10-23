@@ -7,22 +7,22 @@
    align-items: center;
 
    button {
-      width: 186px;
+      background: linear-gradient(#ff79da, #9356dc);
+      border-radius: 25px;
       height: 50px;
-      border: 0;
-      background-image: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
-      box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-      border-radius: 100px;
-      color: $color-white;
-      font-size: 1.1rem;
+      color: #eaeaea;
       font-weight: 500;
+      font-size: 16px;
+      padding-left: 50px;
+      padding-right: 50px;
+      margin-bottom: 0px;
+      border: 0px;
       cursor: pointer;
+      transition: opacity 500ms, box-shadow 500ms, filter 500ms; // Augmentation de la durée de transition à 500ms
 
       &:hover {
-         box-shadow: 0.35rem 0.35rem 15px rgba(0, 0, 0, 0.55);
-         cursor: pointer;
-         transform: scale(1.1);
-         transition-duration: 0.6s;
+         box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+         filter: brightness(1.1); // Augmentation de la luminosité de 10% lors du survol
       }
    }
 }

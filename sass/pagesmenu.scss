@@ -117,7 +117,15 @@
   animation: SlideDown 0.9s ease-in-out;
   position: relative;
 
-  .menu__description,
+  .menu__description {
+    margin: 0;
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: calc(100% - 10px);
+  }
+
   .menu__prix p {
     margin: 0;
     font-size: 14px;
@@ -126,11 +134,9 @@
   .menu__title {
     overflow: hidden;
     color: $color-black;
-    text-overflow: ellipsis;
     font-family: $font-family-first;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 500;
     line-height: normal;
     display: contents;
   }

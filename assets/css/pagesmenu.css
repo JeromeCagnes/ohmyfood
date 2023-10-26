@@ -240,8 +240,6 @@
   position: relative;
   white-space: nowrap;
   text-overflow: ellipsis;
-  display: flex;
-  align-items: center;
 }
 .menu-contenu .menu__description {
   margin: 0;

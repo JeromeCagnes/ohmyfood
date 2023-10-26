@@ -240,14 +240,26 @@
   position: relative;
   white-space: nowrap;
   text-overflow: ellipsis;
+  display: flex;
+  align-items: center;
 }
 .menu-contenu .menu__description {
   margin: 0;
-  font-size: 14px;
+  font-family: roboto, sans-serif;
+  font-size: 16px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   width: calc(100% - 10px);
+  margin-top: 6px;
+}
+.menu-contenu .menu__prix {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: roboto, sans-serif;
+  font-weight: 600;
+  margin-left: auto;
 }
 .menu-contenu .menu__prix p {
   margin: 0;
@@ -264,19 +276,16 @@
   font-weight: 600;
   line-height: normal;
   display: contents;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
-
-.menu__prix {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.prix-check-wrapper {
+.menu-contenu .prix-check-wrapper {
   height: 100%;
   display: flex;
   align-items: center;
   font-weight: 600;
+  align-self: flex-end;
+  width: 30px;
 }
 
 .footer {

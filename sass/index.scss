@@ -337,8 +337,7 @@ li {
 }
 
 img {
-  overflow-clip-margin: content-box;
-  overflow: clip;
+  overflow: hidden;
 }
 
 h3 {

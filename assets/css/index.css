@@ -17,8 +17,8 @@
 .header-logo {
   display: flex;
   justify-content: center;
-  padding: 14px 89px 13px 17px;
-  padding-left: 3rem;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 .header-logo img {
   display: flex;
@@ -213,6 +213,7 @@ main {
 .fas.fa,
 .fas.fas {
   font-weight: 900;
+  margin-left: 40px;
 }
 
 section {

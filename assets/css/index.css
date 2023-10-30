@@ -216,6 +216,12 @@ main {
   margin-left: 40px;
 }
 
+.fa-store {
+  content: "\f54e";
+  color: #9356dc;
+  background-color: transparent;
+}
+
 section {
   display: block;
 }
@@ -358,6 +364,8 @@ li {
 
 .fa-store {
   content: "\f54e";
+  color: #9356dc;
+  background-color: transparent;
 }
 
 .restaurants {
@@ -732,6 +740,11 @@ body {
   .fa-2x {
     margin-bottom: 5px;
     margin-top: 18px;
+  }
+  .fa-store {
+    content: "\f54e";
+    color: #9356dc;
+    background-color: transparent;
   }
   .footer-btn {
     height: 150px;

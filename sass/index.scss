@@ -82,6 +82,14 @@ main {
     font-weight: 900;
     margin-left: 40px;
   }
+
+
+}
+
+.fa-store {
+  content: '\f54e';
+  color: #9356dc;
+  background-color: transparent;
 }
 
 section {
@@ -248,6 +256,8 @@ li {
 
 .fa-store {
   content: '\f54e';
+  color: #9356dc;
+  background-color: transparent;
 }
 
 //SECTION RESTAURANTS MOBILE
@@ -404,6 +414,8 @@ h3 {
   font-size: 2em;
   margin-right: 10px;
 }
+
+
 
 //SECTION FOOTER MOBILE
 @import 'layout/footermobile';
@@ -616,6 +628,11 @@ body {
     margin-top: 18px;
   }
 
+  .fa-store {
+    content: '\f54e';
+    color: #9356dc;
+    background-color: transparent;
+  }
 
   //SECTION FOOTER DESKTOP
   @import 'layout/footerdesktop';

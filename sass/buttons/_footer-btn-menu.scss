@@ -21,7 +21,7 @@
       transition: opacity 500ms, box-shadow 500ms, filter 500ms; // Augmentation de la durée de transition à 500ms
 
       &:hover {
-         box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+         box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.45);
          filter: brightness(1.1); // Augmentation de la luminosité de 10% lors du survol
       }
    }

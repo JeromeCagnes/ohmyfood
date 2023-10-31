@@ -172,26 +172,33 @@
 .prix-check-wrapper1 {
   margin-left: auto;
   font-family: roboto, sans-serif;
+
 }
 
 .menu-check1 {
   height: 100%;
   width: 5%;
   color: transparent;
-  transition-duration: 0.5s;
   transition: all 0.5s ease-in-out;
   background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
+}
 
-  .fa-check:hover {
-    color: #99e2d0;
-    background-color: white;
-    border-radius: 100%;
-    font-size: 15px;
-    padding: 5px;
-  }
+.fa-check {
+  display: none;
+  /* Cacher par défaut */
+  background-color: white;
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 100%;
+}
+
+.menu-contenu1:hover .fa-check {
+  display: inline-block;
+  /* Montrer lors du survol */
+  color: #99E2D0;
 }
 
 

@@ -51,7 +51,7 @@ html {
   align-items: center;
   height: 100%;
   width: 100%;
-  background-color: #ADD8E6;
+  background-color: #add8e6;
   position: fixed;
   top: 0;
   left: 0;
@@ -147,7 +147,7 @@ body.animation-active .header-logo {
 body,
 html {
   margin: 0 auto;
-  font-family: "roboto", sans-serif;
+  font-family: 'roboto', sans-serif;
   scroll-behavior: smooth;
   display: block;
 }
@@ -201,23 +201,23 @@ main {
 .fas {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: "Font Awesome 5 Free";
+  font-family: 'Font Awesome 5 Free';
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
   line-height: 1;
 }
-.fa.fa, .fa.fas,
+.fa.fa,
+.fa.fas,
 .far.fa,
 .far.fas,
 .fas.fa,
 .fas.fas {
   font-weight: 900;
-  margin-left: 40px;
 }
 
 .fa-store {
-  content: "\f54e";
+  content: '\f54e';
   color: #9356dc;
   background-color: transparent;
 }
@@ -235,7 +235,7 @@ i {
 }
 .local-text {
   font-weight: 500;
-  font-family: "roboto", sans-serif;
+  font-family: 'roboto', sans-serif;
   font-size: 16px;
 }
 
@@ -260,7 +260,7 @@ h2 {
 }
 .hero-title {
   margin: 0;
-  font-family: "roboto", sans-serif;
+  font-family: 'roboto', sans-serif;
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
@@ -274,7 +274,7 @@ h2 {
 .hero-subtitle {
   font-weight: 300;
   width: 315px;
-  font-family: "roboto", sans-serif;
+  font-family: 'roboto', sans-serif;
   margin-bottom: 50px;
 }
 
@@ -291,7 +291,7 @@ p {
 }
 .tuto-title {
   margin-bottom: 46px;
-  font-family: "roboto", sans-serif;
+  font-family: 'roboto', sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -334,7 +334,7 @@ p {
 }
 .tuto-step:before {
   counter-increment: compteListe 1;
-  content: counter(compteListe) " ";
+  content: counter(compteListe) ' ';
   background: #9356dc;
   height: 1.5rem;
   width: 1.5rem;
@@ -363,7 +363,7 @@ li {
 }
 
 .fa-store {
-  content: "\f54e";
+  content: '\f54e';
   color: #9356dc;
   background-color: transparent;
 }
@@ -378,7 +378,7 @@ li {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   -moz-column-gap: 2rem;
-       column-gap: 2rem;
+  column-gap: 2rem;
   row-gap: 2rem;
   margin-bottom: 50px;
 }
@@ -398,12 +398,12 @@ li {
   border-radius: 1rem 1rem 0 0;
   box-shadow: none;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .cards .card-sticker {
   background-color: #99e2d0;
   color: #008766;
-  font-family: "roboto", sans-serif;
+  font-family: 'roboto', sans-serif;
   font-size: 14px;
   padding: 0.5rem;
   border-radius: 0.125rem;
@@ -416,7 +416,7 @@ li {
 }
 .cards .card-title {
   margin: 22px 10px 0.25rem;
-  font-family: "roboto", sans-serif;
+  font-family: 'roboto', sans-serif;
   font-size: 19px;
   font-style: normal;
   font-weight: 700;
@@ -431,7 +431,7 @@ li {
 }
 .cards .card-subtitle {
   margin: 0 10px 0.25rem;
-  font-family: "roboto", sans-serif;
+  font-family: 'roboto', sans-serif;
   font-size: 17px;
   font-style: normal;
   font-weight: 400;
@@ -440,7 +440,7 @@ li {
 }
 
 .text {
-  font-family: "roboto", sans-serif;
+  font-family: 'roboto', sans-serif;
   font-size: 1rem;
   font-style: normal;
   font-weight: 600;
@@ -520,7 +520,7 @@ h3 {
 }
 .footer-logo {
   color: #fff;
-  font-family: "Shrikhand", sans-serif;
+  font-family: 'Shrikhand', sans-serif;
   font-size: 18px;
   font-weight: 900;
   font-style: italic;
@@ -530,7 +530,7 @@ h3 {
 .footer-list {
   list-style: none;
   padding: 0;
-  font-family: "roboto", sans-serif;
+  font-family: 'roboto', sans-serif;
 }
 .footer-list-content {
   margin: 0.5rem 0;
@@ -588,7 +588,7 @@ body {
   .hero .hero-title-desktop {
     display: inline;
     text-align: center;
-    font-family: "roboto", sans-serif;
+    font-family: 'roboto', sans-serif;
     font-size: 34px;
     font-style: normal;
     font-weight: 600;
@@ -601,7 +601,7 @@ body {
     width: 100%;
     margin-top: 35px;
     font-style: normal;
-    font-family: "roboto", sans-serif;
+    font-family: 'roboto', sans-serif;
     line-height: normal;
     font-size: 17px;
   }
@@ -692,11 +692,11 @@ body {
     border-radius: 1rem 1rem 0 0;
     box-shadow: none;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .card-title {
     position: relative;
-    font-family: "roboto", sans-serif;
+    font-family: 'roboto', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -710,7 +710,7 @@ body {
     z-index: 2;
   }
   .card-subtitle {
-    font-family: "roboto", sans-serif;
+    font-family: 'roboto', sans-serif;
     font-size: 17px;
     font-style: normal;
     font-weight: 300;
@@ -742,7 +742,7 @@ body {
     margin-top: 18px;
   }
   .fa-store {
-    content: "\f54e";
+    content: '\f54e';
     color: #9356dc;
     background-color: transparent;
   }
@@ -779,7 +779,7 @@ body {
   }
   .footer-logo {
     color: #fff;
-    font-family: "Shrikhand", sans-serif;
+    font-family: 'Shrikhand', sans-serif;
     font-weight: 400;
     font-style: normal;
     width: 139px;
@@ -796,7 +796,7 @@ body {
     justify-content: flex-end;
     width: 80%;
     gap: 10px;
-    font-family: "roboto", sans-serif;
+    font-family: 'roboto', sans-serif;
   }
   .footer-list-content {
     margin: 0;
@@ -809,4 +809,4 @@ body {
   .mentions-legales {
     margin-left: 20px;
   }
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */
